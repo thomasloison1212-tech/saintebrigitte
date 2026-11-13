@@ -313,6 +313,56 @@ collections:
               - { name: lng, label: Longitude, widget: number, value_type: float, required: false }
 
   # ------------------------------------------------------------------
+  - name: bibliotheque
+    label: Bibliothèque
+    icon: menu_book
+    files:
+      - name: livres
+        label: Catalogue des livres
+        file: contenu/json/bibliotheque-livres.json
+        format: json
+        fields:
+          - name: livres
+            label: Livres
+            label_singular: livre
+            widget: list
+            summary: "{{fields.ref}} — {{fields.titre}} ({{fields.statut}})"
+            fields:
+              - { name: ref, label: "Référence (ex. B-015)", widget: string }
+              - { name: titre, label: Titre, widget: string }
+              - { name: auteur, label: Auteur, widget: string }
+              - { name: annee, label: Année, widget: number, value_type: int, required: false }
+              - name: genre
+                label: Genre
+                widget: select
+                options:
+                  - { label: Roman, value: roman }
+                  - { label: Policier, value: policier }
+                  - { label: Bretagne, value: bretagne }
+                  - { label: En breton, value: breton }
+                  - { label: Jeunesse, value: jeunesse }
+                  - { label: Bande dessinée, value: bd }
+                  - { label: Documentaire, value: documentaire }
+              - name: public
+                label: Public
+                widget: select
+                options:
+                  - { label: Adultes, value: adulte }
+                  - { label: Enfants, value: enfant }
+                  - { label: Tous publics, value: tous }
+              - name: statut
+                label: Disponibilité
+                widget: select
+                options:
+                  - { label: Disponible, value: dispo }
+                  - { label: Emprunté, value: emprunte }
+                  - { label: Réservé, value: reserve }
+              - { name: retour, label: Date de retour prévue (si emprunté), widget: datetime, time_format: false, date_format: "DD/MM/YYYY", format: "YYYY-MM-DD", required: false }
+              - { name: nouveau, label: Nouveauté, widget: boolean, required: false, default: false }
+              - { name: note, label: Petit mot des bénévoles, widget: string, required: false }
+              - { name: exemple, label: Livre d'exemple (à supprimer), widget: boolean, required: false, default: false }
+
+  # ------------------------------------------------------------------
   - name: reglages
     label: Réglages
     icon: settings

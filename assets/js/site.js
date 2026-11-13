@@ -182,7 +182,7 @@
       '<p style="color:var(--gris)">' + T("Entre lac et forêt, au cœur de la Bretagne.", "Etre lenn ha koad, e kreiz Breizh.") + "</p></div>" +
       "<div><h4>" + T("Mairie", "Ti-kêr") + "</h4><ul><li>" + echap(M.adresse) + "</li><li>" + echap(M.codePostal + " " + M.ville) + '</li><li><a href="tel:' + echap((M.telephone || "").replace(/\s/g, "")) + '">' + echap(M.telephone) + '</a></li><li><a href="mailto:' + echap(M.email) + '">' + echap(M.email) + "</a></li></ul></div>" +
       "<div><h4>" + T("Horaires", "Eurioù digeriñ") + "</h4><ul>" + h + "</ul></div>" +
-      "<div><h4>" + T("Raccourcis", "Berradennoù") + '</h4><ul><li><a href="demarches.html#salle">' + T("Salle des fêtes", "Sal ar gouelioù") + '</a></li><li><a href="decouvrir.html#camping">' + T("Camping municipal", "Kampin ar gumun") + '</a></li><li><a href="covoiturage.html">' + T("Covoiturage", "Kenweturiñ") + '</a></li><li><a href="vie-locale.html#bulletins">' + T("Bulletins", "Kannadigoù") + '</a></li><li><a href="https://www.pontivy-communaute.bzh" rel="noopener">Pontivy Communauté</a></li><li><a href="#" data-ticket>' + T("Signaler une erreur", "Kemenn ur fazi") + "</a></li></ul></div>" +
+      "<div><h4>" + T("Raccourcis", "Berradennoù") + '</h4><ul><li><a href="demarches.html#salle">' + T("Salle des fêtes", "Sal ar gouelioù") + '</a></li><li><a href="decouvrir.html#camping">' + T("Camping municipal", "Kampin ar gumun") + '</a></li><li><a href="bibliotheque.html">' + T("Bibliothèque", "Levraoueg") + '</a></li><li><a href="covoiturage.html">' + T("Covoiturage", "Kenweturiñ") + '</a></li><li><a href="vie-locale.html#bulletins">' + T("Bulletins", "Kannadigoù") + '</a></li><li><a href="https://www.pontivy-communaute.bzh" rel="noopener">Pontivy Communauté</a></li><li><a href="#" data-ticket>' + T("Signaler une erreur", "Kemenn ur fazi") + "</a></li></ul></div>" +
       "</div>" +
       '<div class="pied__bas"><span>© ' + new Date().getFullYear() + " " + T("Commune de ", "Kumun ") + echap(T(C.nom, C.nomBreton)) + '</span><ul><li><a href="mentions-legales.html">' + T("Mentions légales", "Evezhiadennoù lezennel") + '</a></li><li><a href="mentions-legales.html#accessibilite">' + T("Accessibilité : partiellement conforme", "Haezadusted : diouzh al lezenn en un doare darnel") + "</a></li></ul></div>" +
       (credits ? '<p class="pied__credits">' + T("Photos", "Luc'hskeudennoù") + " : " + credits + " (Wikimedia Commons)</p>" : "") +
@@ -960,6 +960,74 @@
           message: T("Je propose / je cherche (rayer la mention inutile) : ", "") + "\n" + T("Départ (lieu public) : ", "") + "\n" + T("Destination : ", "") + "\n" + T("Jours : ", "") + "\n" + T("Heure de départ et d'arrivée : ", "") + "\n" + T("Retour : ", "") + "\n" + T("Places libres : ", "") + "\n" + T("Mon téléphone (gardé par la mairie, jamais publié) : ", "") });
       });
     }
+  };
+
+  /* Bibliothèque : catalogue des livres (contenu/json/bibliotheque-livres.json) */
+  RENDUS.livres = function (el) {
+    var livres = (S.livres || []).slice(), tel = (M.telephone || "").replace(/\s/g, "");
+    var GENRES = {
+      roman: { nom: T("Romans", "Romantoù"), c: "#7a3b52" }, policier: { nom: T("Policiers", "Romantoù-polis"), c: "#23344f" },
+      bretagne: { nom: T("Bretagne", "Breizh"), c: "#1f3a2e" }, breton: { nom: T("En breton", "E brezhoneg"), c: "#2b5f6a" },
+      jeunesse: { nom: T("Jeunesse", "Yaouankiz"), c: "#c9843f" }, bd: { nom: T("Bandes dessinées", "Bannoù-treset"), c: "#b5532a" },
+      documentaire: { nom: T("Documentaires", "Teulioù"), c: "#5b7d3a" }
+    };
+    var STATUTS = {
+      dispo: { nom: T("Disponible", "Da gaout"), cls: "ok" },
+      emprunte: { nom: T("Emprunté", "Amprestet"), cls: "non" },
+      reserve: { nom: T("Réservé", "Miret"), cls: "res" }
+    };
+    var PUBLIC = { adulte: T("Adultes", "Tud deuet"), enfant: T("Enfants", "Bugale"), tous: T("Tous publics", "An holl") };
+    var etat = { genre: "", dispo: false, q: "" };
+    livres.sort(function (a, b) { return (b.nouveau ? 1 : 0) - (a.nouveau ? 1 : 0) || a.titre.localeCompare(b.titre, "fr"); });
+    el.innerHTML = '<div class="cata__outils"><div class="cata__filtres" role="group" aria-label="' + T("Filtrer par genre", "Silañ dre rummad") + '">' +
+      '<button type="button" data-genre="" aria-pressed="true">' + T("Tout", "Pep tra") + " <small>" + livres.length + "</small></button>" +
+      Object.keys(GENRES).filter(function (g) { return livres.some(function (l) { return l.genre === g; }); }).map(function (g) {
+        return '<button type="button" data-genre="' + g + '" aria-pressed="false">' + echap(GENRES[g].nom) + " <small>" + livres.filter(function (l) { return l.genre === g; }).length + "</small></button>";
+      }).join("") + "</div>" +
+      '<div class="cata__droite"><label class="cata__saison"><input type="checkbox"> <span>' + T("Disponibles maintenant", "Da gaout bremañ") + "</span></label>" +
+      '<input class="cata__recherche" type="search" placeholder="' + T("Titre ou auteur…", "Titl pe skrivagner…") + '" aria-label="' + T("Rechercher un livre", "Klask ul levr") + '"></div></div>' +
+      (livres.some(function (l) { return l.exemple; }) && S.modeRelecture ? '<p class="petit a-confirmer" data-note="À remplacer par le vrai catalogue">' + T("Les livres marqués « Exemple » montrent à quoi ressemblera le catalogue : la disponibilité est fictive.", "") + "</p>" : "") +
+      '<p class="cata__compte petit" aria-live="polite"></p><div class="livres"></div>';
+    var grille = $(".livres", el), compte = $(".cata__compte", el);
+    function fiche(l, i) {
+      var g = GENRES[l.genre] || { nom: "", c: "#555" }, st = STATUTS[l.statut] || STATUTS.dispo;
+      return '<article class="livre revele" style="--c:' + g.c + ";--delai:" + Math.min(i, 8) * 0.04 + 's">' +
+        '<div class="livre__couv"><span class="livre__genre">' + echap(g.nom) + "</span><b>" + echap(l.titre) + "</b><i>" + echap(l.auteur) + "</i>" +
+        (l.nouveau ? '<span class="livre__nouveau">' + T("Nouveau", "Nevez") + "</span>" : "") + "</div>" +
+        '<div class="livre__corps"><p class="livre__statut livre__statut--' + st.cls + '"><span></span>' + echap(st.nom) +
+        (l.statut === "emprunte" && l.retour ? " · " + T("retour prévu le ", "distro d'an ") + dateLongue(l.retour) : "") + "</p>" +
+        '<p class="petit livre__meta">' + (l.annee ? l.annee + " · " : "") + echap(PUBLIC[l.public] || "") + " · " + T("réf. ", "dave ") + echap(l.ref) +
+        (l.exemple ? ' · <span class="covoit__exemple">' + T("Exemple", "Skouer") + "</span>" : "") + "</p>" +
+        (l.note ? '<p class="livre__note">' + echap(T(l.note)) + "</p>" : "") +
+        (l.statut === "dispo" ? '<button type="button" class="lien-fleche livre__reserver" data-ref="' + echap(l.ref) + '">' + T("Le mettre de côté", "Lakaat a-gostez") + "</button>"
+          : '<a class="lien-fleche" href="tel:' + tel + '">' + T("Être prévenu de son retour", "Bezañ kelaouet") + "</a>") +
+        "</div></article>";
+    }
+    function afficher() {
+      var q = etat.q.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+      var vis = livres.filter(function (l) {
+        if (etat.genre && l.genre !== etat.genre) return false;
+        if (etat.dispo && l.statut !== "dispo") return false;
+        if (q && (l.titre + " " + l.auteur).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").indexOf(q) < 0) return false;
+        return true;
+      });
+      grille.innerHTML = vis.map(fiche).join("") || '<p class="petit">' + T("Aucun livre ne correspond.", "Levr ebet ne glot.") + "</p>";
+      var n = vis.filter(function (l) { return l.statut === "dispo"; }).length;
+      compte.textContent = vis.length + " " + T(vis.length > 1 ? "livres" : "livre", "levr") + " · " + n + " " + T(n > 1 ? "disponibles" : "disponible", "da gaout");
+      observer();
+    }
+    $$(".cata__filtres button", el).forEach(function (b) {
+      b.addEventListener("click", function () { etat.genre = b.dataset.genre; $$(".cata__filtres button", el).forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); afficher(); });
+    });
+    $(".cata__saison input", el).addEventListener("change", function () { etat.dispo = this.checked; afficher(); });
+    $(".cata__recherche", el).addEventListener("input", function () { etat.q = this.value; afficher(); });
+    grille.addEventListener("click", function (ev) {
+      var b = ev.target.closest(".livre__reserver"); if (!b || !window.SB.ouvrirTicket) return;
+      var l = livres.filter(function (x) { return x.ref === b.dataset.ref; })[0];
+      window.SB.ouvrirTicket({ type: "Autre", page: T("Bibliothèque", "Levraoueg") + " — " + l.ref,
+        message: T("Je souhaite mettre de côté : ", "") + l.titre + " (" + l.auteur + "), " + T("réf. ", "") + l.ref + "\n" + T("Je passerai le chercher le : ", "") + "\n" + T("Mon nom et mon téléphone : ", "") });
+    });
+    afficher();
   };
 
   /* Teaser Discord : <div data-rendu="discord"></div> */

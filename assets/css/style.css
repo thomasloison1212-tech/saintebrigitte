@@ -571,3 +571,23 @@ a.carte:hover .carte__visuel img, a.carte:hover .carte__visuel svg { transform: 
 .bandeau-demo { position: fixed; z-index: 9999; left: 0; right: 0; bottom: 0; padding: 8px 16px; background: #8f2d1f; color: #fff; font: 600 .85rem/1.35 Manrope, system-ui, sans-serif; text-align: center; }
 .demo body { padding-bottom: 38px; }
 .demo .bandeau-relecture, .demo .ticket-bouton { transform: translateY(-40px); }
+
+/* Bibliothèque */
+.livres { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 20px; }
+.livre { display: grid; grid-template-columns: 104px 1fr; gap: 14px; align-items: start; background: var(--blanc); border: 1px solid var(--trait); border-radius: 18px; padding: 14px; }
+.livre__couv { position: relative; aspect-ratio: 2 / 3; border-radius: 4px 10px 10px 4px; padding: 10px 9px 10px 14px; color: #fff; display: flex; flex-direction: column; gap: 6px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, .28) 0 6px, rgba(255, 255, 255, .12) 6px 8px, transparent 8px), var(--c); box-shadow: 0 10px 20px -12px rgba(0, 0, 0, .55); transition: transform .35s; }
+.livre:hover .livre__couv { transform: rotate(-2deg) translateY(-3px); }
+.livre__genre { font-size: .55rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .8; }
+.livre__couv b { font-family: var(--serif, Georgia, serif); font-style: italic; font-weight: 500; font-size: .92rem; line-height: 1.18; }
+.livre__couv i { margin-top: auto; font-style: normal; font-size: .66rem; opacity: .9; }
+.livre__nouveau { position: absolute; top: -8px; right: -8px; background: #f2c230; color: #2a2200; font-size: .6rem; font-weight: 800; padding: 3px 7px; border-radius: 999px; text-transform: uppercase; transform: rotate(8deg); }
+.livre__statut { display: flex; align-items: center; gap: 7px; font-weight: 700; font-size: .86rem; margin: 2px 0 6px; }
+.livre__statut span { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.livre__statut--ok { color: #2f7d4e; } .livre__statut--ok span { background: #2f7d4e; }
+.livre__statut--non { color: #a8432b; } .livre__statut--non span { background: #a8432b; }
+.livre__statut--res { color: #b07a12; } .livre__statut--res span { background: #d9a81e; }
+.livre__meta { margin: 0 0 6px; }
+.livre__note { font-size: .86rem; color: var(--gris); margin: 0 0 8px; }
+.livre .lien-fleche { font-size: .88rem; }
+.livre__reserver { background: none; border: 0; border-bottom: 1px solid currentColor; padding: 0 0 2px; font: inherit; font-weight: 600; color: var(--vert); cursor: pointer; }

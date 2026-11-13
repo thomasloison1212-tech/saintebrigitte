@@ -5,7 +5,7 @@
    assets/js/site.js.
    ===================================================================== */
 (function () {
-  var FICHIERS = ["reglages", "mairie", "vie-locale", "tarifs", "actualites", "lieux", "covoiturage"];
+  var FICHIERS = ["reglages", "mairie", "vie-locale", "tarifs", "actualites", "lieux", "covoiturage", "bibliotheque-livres"];
   var S = window.SITE = window.SITE || {};
 
   function charger(nom) {
@@ -52,6 +52,7 @@
       ["de", "a"].forEach(function (k) { if (t[k]) { t[k].lat = +t[k].lat; t[k].lng = +t[k].lng; } });
     });
     (S.lieux || []).forEach(function (l) { if (l.lat !== undefined && l.lat !== "" && l.lat !== null) { l.lat = +l.lat; l.lng = +l.lng; } else { delete l.lat; delete l.lng; } });
+    (S.livres || []).forEach(function (l) { if (l.annee) l.annee = +l.annee; });
     (S.terrains && S.terrains.lots || []).forEach(function (l) { l.numero = +l.numero; l.surface = +l.surface; });
   }
 

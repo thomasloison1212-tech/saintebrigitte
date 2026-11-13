@@ -1,0 +1,18 @@
+{
+  "livres": [
+    { "ref": "B-001", "titre": "Changer l'eau des fleurs", "auteur": "Valérie Perrin", "annee": 2018, "genre": "roman", "public": "adulte", "statut": "emprunte", "retour": "2026-11-28", "nouveau": false, "exemple": true },
+    { "ref": "B-002", "titre": "Les Gratitudes", "auteur": "Delphine de Vigan", "annee": 2019, "genre": "roman", "public": "adulte", "statut": "dispo", "nouveau": false, "exemple": true },
+    { "ref": "B-003", "titre": "La Vérité sur l'affaire Harry Quebert", "auteur": "Joël Dicker", "annee": 2012, "genre": "policier", "public": "adulte", "statut": "dispo", "nouveau": false, "exemple": true },
+    { "ref": "B-004", "titre": "Un été à Pont-Aven", "auteur": "Jean-Luc Bannalec", "annee": 2014, "genre": "policier", "public": "adulte", "statut": "reserve", "nouveau": true, "note": "Le premier tome des enquêtes du commissaire Dupin, en Finistère.", "exemple": true },
+    { "ref": "B-005", "titre": "Le Cheval d'orgueil", "auteur": "Pierre-Jakez Hélias", "annee": 1975, "genre": "bretagne", "public": "adulte", "statut": "dispo", "nouveau": false, "note": "Souvenirs d'une enfance bretonne, un grand classique.", "exemple": true },
+    { "ref": "B-006", "titre": "La Légende de la mort", "auteur": "Anatole Le Braz", "annee": 1893, "genre": "bretagne", "public": "adulte", "statut": "dispo", "nouveau": false, "note": "Contes et croyances de Basse-Bretagne autour de l'Ankou.", "exemple": true },
+    { "ref": "B-007", "titre": "Comment peut-on être Breton ?", "auteur": "Morvan Lebesque", "annee": 1970, "genre": "bretagne", "public": "adulte", "statut": "emprunte", "retour": "2026-12-05", "nouveau": false, "exemple": true },
+    { "ref": "B-008", "titre": "Ar Priñs Bihan", "auteur": "Antoine de Saint-Exupéry", "annee": 1943, "genre": "breton", "public": "tous", "statut": "dispo", "nouveau": true, "note": "Le Petit Prince, traduit en breton.", "exemple": true },
+    { "ref": "B-009", "titre": "Le Petit Prince", "auteur": "Antoine de Saint-Exupéry", "annee": 1943, "genre": "jeunesse", "public": "tous", "statut": "dispo", "nouveau": false, "exemple": true },
+    { "ref": "B-010", "titre": "Les Trois Brigands", "auteur": "Tomi Ungerer", "annee": 1961, "genre": "jeunesse", "public": "enfant", "statut": "emprunte", "retour": "2026-11-21", "nouveau": false, "exemple": true },
+    { "ref": "B-011", "titre": "Mes p'tits docs : la forêt", "auteur": "Éditions Milan", "annee": 2015, "genre": "documentaire", "public": "enfant", "statut": "dispo", "nouveau": true, "note": "Parfait avant une balade à Quénécan.", "exemple": true },
+    { "ref": "B-012", "titre": "Astérix chez les Bretons", "auteur": "Goscinny et Uderzo", "annee": 1966, "genre": "bd", "public": "tous", "statut": "dispo", "nouveau": false, "exemple": true },
+    { "ref": "B-013", "titre": "L'Île Noire", "auteur": "Hergé", "annee": 1938, "genre": "bd", "public": "tous", "statut": "reserve", "nouveau": false, "exemple": true },
+    { "ref": "B-014", "titre": "Gaston, gare aux gaffes", "auteur": "Franquin", "annee": 1972, "genre": "bd", "public": "tous", "statut": "dispo", "nouveau": false, "exemple": true }
+  ]
+}

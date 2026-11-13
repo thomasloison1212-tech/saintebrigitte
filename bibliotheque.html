@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bibliothèque — Sainte-Brigitte</title>
+  <meta name="titre-br" content="Levraoueg — Santez-Berc'hed">
+  <meta name="description" content="Bibliothèque municipale de Sainte-Brigitte : horaires, livres disponibles, nouveautés et réservation.">
+  <meta name="robots" content="noindex, nofollow"><!-- version de démonstration : à retirer à la mise en ligne officielle -->
+  <meta name="theme-color" content="#1f3a2e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300..500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<main id="contenu">
+  <header class="tete-page">
+    <div class="photo-fond" data-rendu="photo" data-photo="eglise" data-largeur="1920" data-prioritaire></div>
+    <div class="tete-page__contenu conteneur apparait">
+      <p class="fil"><a href="index.html" data-br="Degemer">Accueil</a> / <a href="vie-locale.html" data-br="Buhez lec'hel">Vie locale</a> / <span data-br="Levraoueg">Bibliothèque</span></p>
+      <h1 data-br="Al levraoueg">La bibliothèque</h1>
+      <p class="chapeau" data-tr>Romans, polars, BD, livres pour enfants et trésors de Bretagne, à deux pas de la mairie. Regardez ce qui est disponible, puis passez le chercher.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="conteneur colonnes">
+      <div class="encart encart--vert revele">
+        <h3 data-tr>Horaires</h3>
+        <ul class="horaires" data-rendu="horaires-biblio"></ul>
+        <p style="margin:16px 0 0" data-tr>14 rue de l'Église, à côté de la mairie.</p>
+      </div>
+      <div class="encart revele" style="--delai:.1s">
+        <h3 data-tr>Comment ça marche ?</h3>
+        <ul class="liste-points">
+          <li data-tr>Repérez un livre disponible dans le catalogue.</li>
+          <li data-tr>Pour le mettre de côté, appelez la mairie ou envoyez une demande avec sa référence.</li>
+          <li class="a-confirmer" data-note="Conditions d'inscription et durée de prêt à confirmer" data-tr>Inscription et durée de prêt : renseignez-vous auprès des bénévoles.</li>
+          <li data-tr>Coin bouquiniste à prix libre, et wifi, ordinateur et imprimante sur place.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="conteneur">
+      <h2 class="revele" data-br="Al levrioù">Le catalogue</h2>
+      <div data-rendu="livres"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="conteneur">
+      <div class="encart encart--vert revele">
+        <h3 data-tr>Un coup de pouce numérique</h3>
+        <p data-tr>Un accompagnement individuel et gratuit au numérique est proposé sur rendez-vous par un ancien formateur.</p>
+        <a class="bouton bouton--clair" href="contact.html?sujet=numerique" data-tr>Prendre rendez-vous</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="contenu/donnees.js"></script>
+<script src="contenu/lieux.js"></script>
+<script src="contenu/photos.js"></script>
+<script src="contenu/anglais.js"></script>
+<script src="assets/js/demarrage.js"></script>
+</body>
+</html>
