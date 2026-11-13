@@ -21,6 +21,7 @@
     ["forges3", "", "Bretagne%2C_Les_Forges_des_Salles-2294.jpg", "Les Forges des Salles", "Elke Wetzig", "CC BY-SA 4.0", "f/f8"],
     ["forges4", "", "Les_Forges_des_Salles_-_01.jpg", "Les Forges des Salles", "JackyM59", "CC BY-SA 4.0", "2/29"],
     ["forges5", "", "Les_Forges_des_Salles_-_04.jpg", "Les Forges des Salles", "JackyM59", "CC BY-SA 4.0", "5/50"],
+    ["forges6", "", "Bretagne%2C_Les_Forges_des_Salles-2295.jpg", "Les Forges des Salles", "Elke Wetzig", "CC BY-SA 4.0", "3/36"],
     ["bonrepos", "", "Abbaye_Notre-Dame-de-Bon-Repos%2C_Saint-Gelven%2C_France.jpg", "Abbaye de Bon-Repos", "Édouard Hue", "CC BY-SA 4.0", "c/c2"],
     ["bonrepos2", "", "Abbaye_Notre-Dame-de-Bon-Repos%2C_Saint-Gelven%2C_France-3.jpg", "Abbaye de Bon-Repos", "Édouard Hue", "CC BY-SA 4.0", "6/69"]  ];
   var PHOTOS = {};
