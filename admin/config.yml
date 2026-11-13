@@ -8,11 +8,11 @@
 # =====================================================================
 backend:
   name: github
-  repo: A-DEFINIR/saintebrigitte
+  repo: thomasloison1212-tech/saintebrigitte
   branch: main
 
-site_url: http://localhost:8080
-display_url: http://localhost:8080
+site_url: https://thomasloison1212-tech.github.io/saintebrigitte/
+display_url: https://thomasloison1212-tech.github.io/saintebrigitte/
 logo:
   src: ../assets/img/blason.svg
 media_folder: assets/img/televersements
