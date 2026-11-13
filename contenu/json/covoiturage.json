@@ -1,0 +1,146 @@
+{
+  "covoiturage": {
+    "dureeAnnonce": 8,
+    "trajets": [
+      {
+        "ref": "C-01",
+        "type": "propose",
+        "exemple": true,
+        "de": {
+          "nom": "Bourg — place de l'église",
+          "lat": 48.1643,
+          "lng": -3.1291
+        },
+        "a": {
+          "nom": "Pontivy — centre-ville",
+          "lat": 48.0677,
+          "lng": -2.9628
+        },
+        "jours": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "depart": "07:40",
+        "arrivee": "08:15",
+        "retour": "17:30",
+        "places": 2,
+        "note": "Trajet domicile-travail, horaires réguliers."
+      },
+      {
+        "ref": "C-02",
+        "type": "cherche",
+        "exemple": true,
+        "de": {
+          "nom": "Les Forges des Salles",
+          "lat": 48.1995,
+          "lng": -3.1266
+        },
+        "a": {
+          "nom": "Rostrenen — marché",
+          "lat": 48.2353,
+          "lng": -3.3169
+        },
+        "jours": [
+          "2"
+        ],
+        "depart": "09:00",
+        "arrivee": "09:25",
+        "retour": "11:45",
+        "note": "Pour faire le marché, sans voiture."
+      },
+      {
+        "ref": "C-03",
+        "type": "propose",
+        "exemple": true,
+        "de": {
+          "nom": "Bourg — place de l'église",
+          "lat": 48.1643,
+          "lng": -3.1291
+        },
+        "a": {
+          "nom": "Loudéac — centre",
+          "lat": 48.1778,
+          "lng": -2.7536
+        },
+        "jours": [
+          "1",
+          "3",
+          "5"
+        ],
+        "depart": "08:00",
+        "arrivee": "08:40",
+        "retour": "18:00",
+        "places": 3,
+        "note": "Je peux faire un petit détour par Le Gouvello."
+      },
+      {
+        "ref": "C-04",
+        "type": "cherche",
+        "exemple": true,
+        "de": {
+          "nom": "Le Gouvello — chapelle",
+          "lat": 48.17,
+          "lng": -3.0979
+        },
+        "a": {
+          "nom": "Cléguérec — commerces",
+          "lat": 48.1253,
+          "lng": -3.0711
+        },
+        "jours": [
+          "6"
+        ],
+        "depart": "10:00",
+        "arrivee": "10:15",
+        "retour": "11:30",
+        "note": "Courses du samedi matin."
+      },
+      {
+        "ref": "C-05",
+        "type": "propose",
+        "exemple": true,
+        "de": {
+          "nom": "Bourg — place de l'église",
+          "lat": 48.1643,
+          "lng": -3.1291
+        },
+        "a": {
+          "nom": "Gouarec — bourg",
+          "lat": 48.2278,
+          "lng": -3.1786
+        },
+        "jours": [
+          "3"
+        ],
+        "depart": "14:00",
+        "arrivee": "14:15",
+        "retour": "17:00",
+        "places": 1,
+        "note": "Mercredi après-midi, activités des enfants."
+      },
+      {
+        "ref": "C-06",
+        "type": "cherche",
+        "exemple": true,
+        "de": {
+          "nom": "Bourg — place de l'église",
+          "lat": 48.1643,
+          "lng": -3.1291
+        },
+        "a": {
+          "nom": "Rennes — hôpital Pontchaillou",
+          "lat": 48.1213,
+          "lng": -1.6935
+        },
+        "date": "2026-12-03",
+        "depart": "07:30",
+        "arrivee": "09:30",
+        "retour": "15:00",
+        "note": "Rendez-vous médical, trajet unique. Participation aux frais bien sûr."
+      }
+    ]
+  }
+}

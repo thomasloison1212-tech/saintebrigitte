@@ -1,0 +1,358 @@
+{
+  "lieux": [
+    {
+      "nom": "Mairie de Sainte-Brigitte",
+      "cat": "voir",
+      "adresse": "14 rue de l'Église",
+      "lat": 48.16427,
+      "lng": -3.12911,
+      "tel": "02 97 27 61 69",
+      "horaires": "Mercredi et vendredi, 9h–12h30 et 13h30–17h30",
+      "desc": "Secrétariat de mairie et bibliothèque municipale (mercredi 16h–18h, samedi 10h–12h)."
+    },
+    {
+      "nom": "Église Sainte-Brigitte",
+      "cat": "voir",
+      "adresse": "Le bourg",
+      "lat": 48.16447,
+      "lng": -3.12824,
+      "desc": "L'église du bourg et sa Vierge en prière, statue ancienne en cours de restauration."
+    },
+    {
+      "nom": "Camping municipal",
+      "cat": "voir",
+      "adresse": "Le bourg",
+      "lat": 48.16375,
+      "lng": -3.12875,
+      "tel": "02 97 27 61 69",
+      "desc": "Camping simple et paisible, sanitaires et aire de service pour camping-cars, à 50 m de la salle des fêtes."
+    },
+    {
+      "nom": "Les Forges des Salles",
+      "cat": "voir",
+      "adresse": "Les Forges des Salles",
+      "lat": 48.19954,
+      "lng": -3.1266,
+      "tel": "06 19 60 55 10",
+      "site": "https://www.lesforgesdessalles.fr",
+      "horaires": "Mai et septembre : week-ends dès 14h. Juillet-août : tous les jours dès 14h. Groupes sur rendez-vous d'avril à octobre.",
+      "desc": "Visites guidées d'un village sidérurgique resté intact depuis le XIXe siècle."
+    },
+    {
+      "nom": "Chapelle Saint-Joseph",
+      "cat": "voir",
+      "adresse": "Le Gouvello",
+      "lat": 48.16996,
+      "lng": -3.09786,
+      "desc": "Petite chapelle du village du Gouvello, au départ de jolis chemins aux étiquettes botaniques trilingues."
+    },
+    {
+      "nom": "Fontaine Saint-Guérec",
+      "cat": "voir",
+      "adresse": "Belle Vue",
+      "lat": 48.15406,
+      "lng": -3.11573,
+      "desc": "Fontaine de dévotion au cœur de la campagne brigittoise."
+    },
+    {
+      "nom": "Château des Salles (ruines)",
+      "cat": "voir",
+      "adresse": "Les Salles",
+      "lat": 48.18241,
+      "lng": -3.13522,
+      "desc": "Vestiges du château, en forêt de Quénécan, entre le bourg et les Forges."
+    },
+    {
+      "nom": "Crêperie La Ribote",
+      "cat": "manger",
+      "adresse": "1 rue de l'Église",
+      "lat": 48.16427,
+      "lng": -3.12806,
+      "tel": "02 97 27 61 06",
+      "horaires": "Du mercredi 18h au dimanche soir, sur place ou sur réservation",
+      "desc": "Crêperie-bar traditionnelle avec terrasse, produits frais et locaux."
+    },
+    {
+      "nom": "Maddison's Bar",
+      "cat": "manger",
+      "adresse": "4 route des Macles",
+      "lat": 48.16411,
+      "lng": -3.12787,
+      "tel": "02 97 27 52 99",
+      "site": "https://www.facebook.com/maddisonscafebar",
+      "horaires": "Du jeudi au lundi, 11h–22h (fermé mardi et mercredi)",
+      "desc": "Bar traditionnel au cœur de la forêt de Quénécan : billard, fléchettes, échange de livres en anglais, soirées musicales."
+    },
+    {
+      "nom": "La Crevette Qui Danse",
+      "cat": "manger",
+      "adresse": "10 Belle Fontaine",
+      "lat": 48.1517,
+      "lng": -3.13338,
+      "tel": "02 97 27 07 30",
+      "horaires": "Foodtruck : lundi soir à Gouarec, mardi matin à Rostrenen, mardi soir à Saint-Aignan, vendredi soir à Malguénac, samedi matin à Cléguérec",
+      "desc": "Cuisine thaïlandaise traditionnelle, à emporter ou sur commande, et traiteur pour vos événements."
+    },
+    {
+      "nom": "Gîte Ty Vakansou",
+      "cat": "dormir",
+      "adresse": "Le Rohello",
+      "lat": 48.15786,
+      "lng": -3.1281,
+      "tel": "06 64 51 17 77",
+      "site": "https://www.tyvakansou.fr",
+      "horaires": "Toute l'année, sur réservation",
+      "desc": "Grand gîte jusqu'à 14 personnes, 7 chambres, piscine couverte chauffée, jardin d'un hectare en lisière de forêt."
+    },
+    {
+      "nom": "Gîte L'évasion",
+      "cat": "dormir",
+      "adresse": "7 Le Rohello",
+      "lat": 48.15746,
+      "lng": -3.12862,
+      "tel": "06 71 37 09 57",
+      "site": "https://www.airbnb.fr/rooms/36685809",
+      "horaires": "Toute l'année",
+      "desc": "Gîte pour 4 personnes, piscine l'été, étang, chèvres et poules à proximité."
+    },
+    {
+      "nom": "Gwenva",
+      "cat": "dormir",
+      "adresse": "5 Le Ruello",
+      "lat": 48.16901,
+      "lng": -3.12673,
+      "tel": "06 60 07 83 40",
+      "horaires": "Du 1er avril au 30 septembre",
+      "desc": "Deux chambres d'hôtes, piscine chauffée, petit-déjeuner et table d'hôte sur réservation."
+    },
+    {
+      "nom": "Chez René",
+      "cat": "dormir",
+      "adresse": "3 Lannivon",
+      "lat": 48.16964,
+      "lng": -3.08383,
+      "tel": "06 20 06 33 26",
+      "horaires": "Sur réservation",
+      "desc": "Maison pour 8 voyageurs : 5 chambres, 2 salles de bain."
+    },
+    {
+      "nom": "Parc Lann",
+      "cat": "dormir",
+      "adresse": "Les Forges des Salles",
+      "lat": 48.1999,
+      "lng": -3.127,
+      "tel": "06 62 82 01 70",
+      "horaires": "Sur réservation",
+      "desc": "Location saisonnière au village des Forges des Salles."
+    },
+    {
+      "nom": "Hébergements insolites de Quénécan",
+      "cat": "dormir",
+      "adresse": "Le Guenault, Perret",
+      "ville": "Bon Repos sur Blavet",
+      "lat": 48.20509,
+      "lng": -3.13492,
+      "tel": "06 19 60 55 10",
+      "site": "http://www.hebergement-quenecan.fr",
+      "horaires": "Tous les jours, accueil dès 15h30, sur réservation",
+      "desc": "Cabanes dans les arbres, cabanes sur pilotis et gîtes insolites, à la lisière de la commune."
+    },
+    {
+      "nom": "Pépinière de Belle Fontaine",
+      "cat": "produits",
+      "adresse": "1 Belle Fontaine",
+      "lat": 48.15137,
+      "lng": -3.13349,
+      "tel": "02 97 27 64 35",
+      "site": "https://ateliernomade.wordpress.com",
+      "horaires": "Sur rendez-vous",
+      "desc": "Arbres fruitiers de variétés anciennes, jus de pommes, légumes de saison (vente à la ferme de juin à septembre)."
+    },
+    {
+      "nom": "Primaseva",
+      "cat": "produits",
+      "adresse": "Les Forges des Salles",
+      "lat": 48.1993,
+      "lng": -3.1258,
+      "tel": "06 60 78 81 80",
+      "horaires": "Sur commande",
+      "desc": "Sève de bouleau bio : fraîche dès février, puis pasteurisée."
+    },
+    {
+      "nom": "Mammen Roc'h",
+      "cat": "produits",
+      "adresse": "Gohfornic",
+      "lat": 48.16505,
+      "lng": -3.11424,
+      "tel": "06 79 48 61 78",
+      "desc": "Limonaderie artisanale et bio, distribuée en bars, épiceries et événements."
+    },
+    {
+      "nom": "Automantik — Laurent Dacquay",
+      "cat": "produits",
+      "adresse": "4 Porh Nagard",
+      "lat": 48.1649,
+      "lng": -3.11549,
+      "tel": "07 69 46 69 80",
+      "horaires": "Sur rendez-vous",
+      "desc": "Automates en bois, éoliennes de jardin et marionnettes ; musicien et marionnettiste."
+    },
+    {
+      "nom": "Des chausses et des choses",
+      "cat": "produits",
+      "adresse": "410 Le Gouvello",
+      "lat": 48.1729,
+      "lng": -3.09548,
+      "tel": "02 97 27 51 70",
+      "horaires": "Week-ends événementiels (dates sur Facebook)",
+      "desc": "Chaussures, sacs et ceintures en cuir de style médiéval, viking ou fantaisie."
+    },
+    {
+      "nom": "Foxy Factory",
+      "cat": "produits",
+      "adresse": "3 Lannivon",
+      "lat": 48.16985,
+      "lng": -3.0842,
+      "tel": "07 68 08 45 44",
+      "horaires": "Sur rendez-vous",
+      "desc": "Gravure et découpe laser sur bois, créations sur mesure."
+    },
+    {
+      "nom": "Terrachanvre",
+      "cat": "produits",
+      "adresse": "La Métairie",
+      "ville": "Quistinic",
+      "tel": "02 97 39 86 23",
+      "site": "https://www.terrachanvre.fr",
+      "desc": "Chanvre bio pour l'alimentation et pour l'habitat (chaux-chanvre)."
+    },
+    {
+      "nom": "Élevage Le Borgne",
+      "cat": "produits",
+      "desc": "Éleveur porcin."
+    },
+    {
+      "nom": "Élevage Le Corronc",
+      "cat": "produits",
+      "desc": "Éleveurs de canards et de bovins."
+    },
+    {
+      "nom": "Sylviculture du Pontavice",
+      "cat": "produits",
+      "desc": "Sylviculteur en forêt de Quénécan."
+    },
+    {
+      "nom": "Tommy Giraud — élagage & paysage",
+      "cat": "habitat",
+      "adresse": "2 Belle Fontaine",
+      "lat": 48.15352,
+      "lng": -3.1305,
+      "tel": "06 69 59 15 94",
+      "site": "https://www.giraud-elagage-paysagiste.fr",
+      "horaires": "8h–17h30",
+      "desc": "Paysagiste et arboriste grimpeur : élagage, abattage, entretien et création de jardins."
+    },
+    {
+      "nom": "Steve Humble Rénovations",
+      "cat": "habitat",
+      "adresse": "Le Garly",
+      "lat": 48.16029,
+      "lng": -3.12765,
+      "tel": "06 50 98 04 56",
+      "desc": "Électricité, plomberie, menuiserie-charpente, placo, isolation, carrelage. English spoken."
+    },
+    {
+      "nom": "Julien Gauthier Architecture",
+      "cat": "habitat",
+      "adresse": "Lannivon",
+      "lat": 48.1696,
+      "lng": -3.083,
+      "tel": "07 67 15 28 80",
+      "horaires": "Sur rendez-vous",
+      "desc": "Architecte DPLG : bâtiments sains, ergonomie et maintien à domicile."
+    },
+    {
+      "nom": "Cellaouate",
+      "cat": "habitat",
+      "adresse": "ZI de Keriven",
+      "ville": "Saint-Martin-des-Champs",
+      "tel": "02 98 88 48 78",
+      "site": "https://www.cellaouate.com",
+      "desc": "Isolant en ouate de cellulose recyclée."
+    },
+    {
+      "nom": "Tanksole",
+      "cat": "services",
+      "adresse": "3 Le Rohello",
+      "lat": 48.15727,
+      "lng": -3.12868,
+      "tel": "06 26 06 13 98",
+      "site": "https://www.tanksole.fr",
+      "horaires": "Sur commande et sur rendez-vous",
+      "desc": "Illustration jeunesse, identité visuelle, papeterie et animations."
+    },
+    {
+      "nom": "Vernus — artiste peintre",
+      "cat": "services",
+      "adresse": "11 rue de l'Église",
+      "lat": 48.1641,
+      "lng": -3.12881,
+      "tel": "06 02 33 62 37",
+      "horaires": "Sur rendez-vous",
+      "desc": "Atelier d'un artiste peintre installé en Bretagne depuis 1988."
+    },
+    {
+      "nom": "Art-Graphic-Leverdier",
+      "cat": "services",
+      "adresse": "Lannivon",
+      "lat": 48.17005,
+      "lng": -3.0835,
+      "tel": "07 81 91 33 99",
+      "site": "https://www.art-graphic-leverdier.com",
+      "desc": "Artiste-infographiste : logos, sites, affiches, mise en page, sérigraphie, photo."
+    },
+    {
+      "nom": "Éditions Amhollved",
+      "cat": "services",
+      "adresse": "Lannivon",
+      "lat": 48.1694,
+      "lng": -3.0828,
+      "site": "https://www.editions-amhollved.com",
+      "desc": "Livres, jeux et partitions : culture bretonne ancienne, Inde, musique classique."
+    },
+    {
+      "nom": "La Truite de Quénécan",
+      "cat": "services",
+      "adresse": "Les Loges Bauché",
+      "lat": 48.19689,
+      "lng": -3.11437,
+      "desc": "Maison d'édition."
+    },
+    {
+      "nom": "Au plaisir de vous lire",
+      "cat": "services",
+      "adresse": "2 Bellevue",
+      "lat": 48.15455,
+      "lng": -3.13053,
+      "tel": "06 48 25 47 00",
+      "site": "https://www.auplaisirdevouslire.fr",
+      "desc": "Relecture-correction, rédaction, formation à l'écrit, traduction portugais."
+    },
+    {
+      "nom": "GénéaWest",
+      "cat": "services",
+      "adresse": "2 rue Théodore Huet",
+      "ville": "Cléguérec",
+      "tel": "06 28 21 91 41",
+      "site": "https://www.geneawest.bzh",
+      "desc": "Généalogie familiale, successorale et foncière."
+    },
+    {
+      "nom": "Kejal",
+      "cat": "services",
+      "ville": "Caulnes",
+      "site": "https://www.kejal.fr",
+      "desc": "Formation aux projets d'économie sociale et solidaire."
+    }
+  ]
+}

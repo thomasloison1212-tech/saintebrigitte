@@ -1,0 +1,104 @@
+{
+  "agenda": [
+    {
+      "date": "2026-11-11",
+      "heure": "11h00",
+      "titre": "Cérémonie du 11 Novembre",
+      "titre_br": "Lid an 11 a viz Du",
+      "lieu": "Monument aux morts",
+      "organisateur": "Mairie",
+      "aConfirmer": true
+    },
+    {
+      "date": "2026-12-13",
+      "heure": "15h00",
+      "titre": "Noël des enfants",
+      "titre_br": "Nedeleg ar vugale",
+      "lieu": "Salle des fêtes",
+      "organisateur": "Comité des fêtes",
+      "aConfirmer": true
+    },
+    {
+      "date": "2027-01-16",
+      "heure": "11h00",
+      "titre": "Vœux du maire",
+      "titre_br": "Gourc'hemennoù ar maer",
+      "lieu": "Salle des fêtes",
+      "organisateur": "Mairie",
+      "aConfirmer": true
+    },
+    {
+      "date": "2027-03-21",
+      "heure": "09h30",
+      "titre": "Balade naturaliste — retour des hirondelles",
+      "titre_br": "Bale natur — distro ar gwennilied",
+      "lieu": "Départ du bourg",
+      "organisateur": "Observatoire de la biodiversité",
+      "aConfirmer": true
+    }
+  ],
+  "associations": [
+    {
+      "nom": "Comité des fêtes",
+      "activites": "Repas solidaires, jeux de boules, vide-grenier, Noël des enfants, expositions"
+    },
+    {
+      "nom": "Les Sangliers de Quénécan",
+      "activites": "Manifestations sportives, repas solidaires",
+      "email": "lessangliersdequenecan@yahoo.com"
+    },
+    {
+      "nom": "Comité paroissial",
+      "activites": "Kermesse, repas, jeux de boules, tombola, cérémonies religieuses"
+    },
+    {
+      "nom": "Cartes blanches",
+      "activites": "Animations, exposés, expositions",
+      "email": "lescartesblanches@yahoo.com"
+    },
+    {
+      "nom": "Bretagne-Lituanie",
+      "activites": "Animations, échanges culturels"
+    }
+  ],
+  "bulletins": [
+    {
+      "titre": "Berc'hediz n°8",
+      "sousTitre": "Novembre 2025",
+      "fichier": ""
+    },
+    {
+      "titre": "Berc'hed Infos",
+      "sousTitre": "Décembre 2025",
+      "fichier": ""
+    },
+    {
+      "titre": "Berc'hediz n°7",
+      "sousTitre": "Mai 2025",
+      "fichier": ""
+    },
+    {
+      "titre": "Berc'hediz n°6",
+      "sousTitre": "Novembre 2024",
+      "fichier": ""
+    }
+  ],
+  "conseil": [
+    {
+      "nom": "Anne Le Borgne",
+      "role": "Maire"
+    },
+    {
+      "nom": "À compléter",
+      "role": "1er adjoint"
+    },
+    {
+      "nom": "À compléter",
+      "role": "Conseillère / conseiller"
+    },
+    {
+      "nom": "À compléter",
+      "role": "Conseillère / conseiller"
+    }
+  ]
+}

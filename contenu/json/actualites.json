@@ -1,0 +1,132 @@
+{
+  "actualites": [
+    {
+      "date": "2026-09-21",
+      "categorie": "Mairie",
+      "categorie_br": "Ti-kêr",
+      "titre": "Anne Le Borgne élue maire de Sainte-Brigitte",
+      "titre_br": "Anne Le Borgne dilennet da vaerez Santez-Berc'hed",
+      "resume": "À l'issue de l'élection municipale partielle du 20 septembre, la commune a de nouveau une maire.",
+      "resume_br": "Goude an dilennadeg-kêr darnel d'an 20 a viz Gwengolo he deus ar gumun ur vaerez en-dro.",
+      "photo": "eglise",
+      "texte": "<p>Le dimanche 20 septembre 2026, les Brigittoises et les Brigittois ont élu leur nouveau conseil municipal. <strong>Anne Le Borgne</strong> l'emporte avec 80 voix contre 75.</p><p>Ce scrutin faisait suite à l'annulation par le tribunal administratif de Rennes de l'élection du 15 mars 2026. Pendant l'été, une délégation spéciale nommée par le préfet avait assuré la gestion courante de la commune.</p><p>La composition du nouveau conseil municipal sera publiée prochainement sur ce site.</p>"
+    },
+    {
+      "date": "2026-07-15",
+      "categorie": "Mairie",
+      "categorie_br": "Ti-kêr",
+      "titre": "Arrêté préfectoral : nouvelles élections municipales",
+      "titre_br": "Dekred ar prefed : dilennadegoù-kêr nevez",
+      "resume": "Le Préfet du Morbihan convoque les électeurs brigittois à de nouvelles élections municipales.",
+      "resume_br": "Prefed ar Mor-Bihan a c'halv dilennerien Santez-Berc'hed d'un dilennadeg-kêr nevez.",
+      "photo": "gouvello",
+      "texte": "<p>À la suite de l'annulation du scrutin de mars, le Préfet du Morbihan a pris un arrêté convoquant les électeurs de la commune à de nouvelles élections municipales. L'arrêté est consultable en mairie.</p>",
+      "aConfirmer": true
+    },
+    {
+      "date": "2026-06-22",
+      "categorie": "Alerte",
+      "categorie_br": "Diwall",
+      "titre": "Canicule : vigilance rouge dans le Morbihan",
+      "titre_br": "Tommder bras : evezh ruz er Mor-Bihan",
+      "resume": "Jusqu'à 37 à 40 °C dans les terres : protégez-vous et prenez des nouvelles de vos voisins. Les horaires des déchèteries sont modifiés.",
+      "resume_br": "Betek 37 da 40 °C en diabarzh ar vro : en em warezit ha kemerit keloù diwar-benn hoc'h amezeien.",
+      "photo": "lac1",
+      "texte": "<p>Le département du Morbihan a été placé en <strong>vigilance rouge canicule</strong> à partir du lundi 22 juin 2026 à 12 h, avec des maximales de 37 à 40 °C dans les terres et des nuits très chaudes. Une vigilance jaune orage était également prévue.</p><p>Pendant l'épisode, les horaires des déchèteries de Pontivy Communauté ont été adaptés.</p><p><strong>Les bons réflexes :</strong> buvez régulièrement, restez au frais aux heures chaudes, fermez volets et fenêtres le jour, et prenez des nouvelles des personnes âgées ou isolées. Les personnes fragiles peuvent se signaler en mairie.</p>"
+    },
+    {
+      "date": "2026-02-01",
+      "categorie": "Patrimoine",
+      "categorie_br": "Glad",
+      "titre": "Votez pour sauver notre Vierge en prière !",
+      "titre_br": "Votit evit saveteiñ hor Gwerc'hez o pediñ !",
+      "resume": "La statue ancienne du porche de l'église était l'une des trois finalistes bretonnes de la Sauvegarde de l'Art français.",
+      "resume_br": "Delwenn gozh porched an iliz a oa unan eus an tri zremenour diwezhañ e Breizh.",
+      "photo": "eglise2",
+      "texte": "<p>La statue ancienne du porche de l'église de Sainte-Brigitte a été confiée, avec le soutien du Département, à l'atelier CoRéum, spécialiste de la conservation-restauration d'objets d'art. Une étude a permis d'estimer les travaux nécessaires.</p><p>Pour compléter le financement, la commune a présenté l'œuvre à la Fondation pour la Sauvegarde de l'Art français, qui organise avec Allianz France un vote citoyen : chaque œuvre lauréate reçoit 8 000 € de mécénat pour sa restauration. En 2025, plus de 400 œuvres ont été présentées.</p><p><strong>Notre Vierge en prière faisait partie des trois finalistes bretonnes</strong>, aux côtés de la Vierge à l'enfant de la chapelle Saint-Laurent de Goulien et du cheval anatomique du docteur Auzoux de l'Institut Agro de Rennes. Le vote s'est clôturé dans la nuit du 22 au 23 février.</p>",
+      "aConfirmer": true
+    },
+    {
+      "date": "2025-12-12",
+      "categorie": "Bulletin",
+      "categorie_br": "Kannadig",
+      "titre": "Le Berc'hed Infos de décembre est paru",
+      "titre_br": "Embannet eo Berc'hed Infos miz Kerzu",
+      "resume": "Toutes les nouvelles de la commune, distribuées dans chaque boîte aux lettres.",
+      "resume_br": "Holl geleier ar gumun, kaset e pep boest-lizhiri.",
+      "photo": "lac2015",
+      "texte": "<p>Le Berc'hed Infos de décembre 2025 a été distribué dans toutes les boîtes aux lettres. Il est aussi disponible en mairie.</p>",
+      "aConfirmer": true
+    },
+    {
+      "date": "2025-12-01",
+      "categorie": "Travaux",
+      "categorie_br": "Labourioù",
+      "titre": "Travaux au cœur du bourg",
+      "titre_br": "Labourioù e kreiz ar vourc'h",
+      "resume": "La rue de l'Église est fermée à la circulation pendant la réfection des réseaux et l'aménagement du bourg.",
+      "resume_br": "Serret eo straed an Iliz d'ar c'harrbedoù e-pad ma vez adkempennet ar vourc'h.",
+      "photo": "eglise",
+      "texte": "<p>Les travaux d'aménagement du bourg ont débuté le 1<sup>er</sup> décembre. La rue de l'Église est fermée à la circulation, le temps de refaire les conduites d'eaux usées défectueuses, le revêtement et les aménagements prévus.</p><p>Le chantier est interrompu quinze jours pendant les fêtes. Tout devrait être terminé pour la mi-février.</p>"
+    },
+    {
+      "date": "2024-11-20",
+      "categorie": "Vie locale",
+      "categorie_br": "Buhez lec'hel",
+      "titre": "Carte blanche au Gouvello : le recueil est disponible",
+      "titre_br": "Kartenn wenn er Gouvello : prest eo an dastumad",
+      "resume": "Photos, cartes et récits de l'exposition du 29 septembre réunis dans un recueil de 15 €.",
+      "resume_br": "Luc'hskeudennoù, kartennoù ha istorioù an diskouezadeg en un dastumad.",
+      "photo": "gouvello",
+      "texte": "<p>À la demande de nombreux visiteurs, l'association Les Cartes blanches a édité un recueil regroupant les informations, photographies et cartes exposées au village du Gouvello le dimanche 29 septembre. Il est vendu 15 €.</p><p>Les jolis chemins autour du Gouvello gardent leurs étiquettes botaniques, en breton, en latin et en français, au pied des essences remarquables.</p><p>Commandes : <a href=\"mailto:lescartesblanches@yahoo.com\">lescartesblanches@yahoo.com</a> ou 02 97 27 63 32.</p>",
+      "aConfirmer": true
+    },
+    {
+      "date": "2024-11-15",
+      "categorie": "Mairie",
+      "categorie_br": "Ti-kêr",
+      "titre": "Logements sociaux à louer",
+      "titre_br": "Lojeizioù sokial da feurmiñ",
+      "resume": "Un studio et un appartement adapté au handicap sont disponibles à la location.",
+      "resume_br": "Ur studio hag un apartamant azasaet d'an dud nammet a zo da feurmiñ.",
+      "photo": "gouvello",
+      "texte": "<p>La commune propose à la location un studio et un appartement adapté au handicap. Pour toute candidature, contactez la mairie aux heures de permanence ou au 02 97 27 61 69.</p>",
+      "aConfirmer": true
+    },
+    {
+      "date": "2024-11-10",
+      "categorie": "Mairie",
+      "categorie_br": "Ti-kêr",
+      "titre": "Recensement citoyen dès 16 ans",
+      "titre_br": "Niveradeg keodedel adalek 16 vloaz",
+      "resume": "Chaque jeune doit se faire recenser en mairie dans les trois mois qui suivent ses 16 ans.",
+      "resume_br": "Pep yaouank a rank en em ziskleriañ en ti-kêr en tri miz goude e 16 vloaz.",
+      "photo": "lac3",
+      "texte": "<p>Tout jeune ayant atteint 16 ans doit se déclarer en mairie dans les trois mois suivant son anniversaire. Il obtient ainsi l'attestation nécessaire pour passer le permis de conduire et les examens.</p><p>Le jeune ou l'un de ses parents se présente au secrétariat avec le livret de famille et une pièce d'identité.</p>"
+    },
+    {
+      "date": "2024-11-05",
+      "categorie": "Vie locale",
+      "categorie_br": "Buhez lec'hel",
+      "titre": "Jus de pommes solidaire",
+      "titre_br": "Sun-avaloù kengred",
+      "resume": "Du jus de vergers non traités à 3 € le litre, au profit des familles accompagnées par RESF Pays de Pontivy.",
+      "resume_br": "Sun-avaloù diwar perzhier hep louzoù, 3 € al litr, evit sikour familhoù.",
+      "photo": "foret2",
+      "texte": "<p>Le réseau RESF Pays de Pontivy accompagne une dizaine de familles déboutées du droit d'asile, bien intégrées et dont les enfants sont scolarisés. La vente de jus de pommes aide à couvrir leurs charges (énergie, assurances, cantine…).</p><p>Jus de pommes issu de vergers non traités, <strong>3 € le litre</strong>. Contact : 07 82 58 29 98.</p>",
+      "aConfirmer": true
+    },
+    {
+      "date": "2024-06-01",
+      "categorie": "Environnement",
+      "categorie_br": "Endro",
+      "titre": "Les cabas remplacent les sacs jaunes",
+      "titre_br": "Sac'hoù-kabas e-lec'h ar sac'hoù melen",
+      "resume": "Un sac réutilisable par foyer, distribué gratuitement en mairie, pour vider ses emballages en vrac.",
+      "resume_br": "Ur sac'h adimplijus dre diegezh, roet digoust en ti-kêr.",
+      "photo": "lac2015",
+      "texte": "<p>Les sacs jaunes ne sont plus distribués : chaque foyer reçoit un <strong>sac cabas réutilisable et lavable</strong> pour stocker ses emballages avant de les vider en vrac dans les conteneurs jaunes.</p><p>Pourquoi ? Les erreurs de tri ont atteint 811 tonnes en 2023, soit 16,6 kg par habitant, en grande partie à cause des sacs jaunes.</p><p>Les consignes ne changent pas : tous les emballages bien vidés se trient. Inutile de les laver, ne les imbriquez pas, écrasez-les. Les sacs noirs ou opaques sont refusés au centre de tri.</p>",
+      "aConfirmer": true
+    }
+  ]
+}

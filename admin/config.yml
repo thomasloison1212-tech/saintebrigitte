@@ -1,0 +1,352 @@
+# =====================================================================
+# ESPACE GESTIONNAIRE DU SITE DE SAINTE-BRIGITTE (Sveltia CMS)
+# Chaque « collection » ci-dessous devient un menu dans l'espace
+# gestionnaire. Les contenus sont enregistrés dans contenu/json/.
+#
+# Mise en ligne : remplacer « A-DEFINIR/saintebrigitte » par le dépôt
+# GitHub de la mairie. En local, utiliser « Work with Local Repository ».
+# =====================================================================
+backend:
+  name: github
+  repo: A-DEFINIR/saintebrigitte
+  branch: main
+
+site_url: http://localhost:8080
+display_url: http://localhost:8080
+logo:
+  src: ../assets/img/blason.svg
+media_folder: assets/img/televersements
+public_folder: assets/img/televersements
+
+collections:
+  # ------------------------------------------------------------------
+  - name: actualites
+    label: Actualités
+    icon: newspaper
+    files:
+      - name: actualites
+        label: Les actualités
+        file: contenu/json/actualites.json
+        format: json
+        fields:
+          - name: actualites
+            label: Articles
+            label_singular: article
+            widget: list
+            summary: "{{fields.date}} — {{fields.titre}}"
+            fields:
+              - { name: titre, label: Titre, widget: string }
+              - { name: date, label: Date, widget: datetime, time_format: false, date_format: "DD/MM/YYYY", format: "YYYY-MM-DD" }
+              - name: categorie
+                label: Catégorie
+                widget: select
+                options: [Mairie, Alerte, Travaux, Vie locale, Patrimoine, Environnement, Bulletin]
+              - { name: resume, label: "Résumé (une ou deux phrases)", widget: text }
+              - { name: texte, label: Texte complet, widget: markdown, required: false, hint: "Laissez une ligne vide entre deux paragraphes." }
+              - { name: image, label: Photo (votre fichier), widget: image, required: false }
+              - name: photo
+                label: Ou une photo de la bibliothèque du site
+                widget: select
+                required: false
+                options: [lac1, lac2, lac3, lacpano, lac2015, keryhuel, barrage, sordan, foret1, foret2, eglise, eglise2, gouvello, cloche, forges1, forges2, forges3, forges4, forges5, bonrepos, bonrepos2]
+              - { name: aConfirmer, label: "À vérifier (affiche un pointillé)", widget: boolean, required: false, default: false }
+              - { name: titre_br, label: Titre en breton, widget: string, required: false }
+              - { name: resume_br, label: Résumé en breton, widget: text, required: false }
+              - { name: categorie_br, label: Catégorie en breton, widget: string, required: false }
+
+  # ------------------------------------------------------------------
+  - name: mairie
+    label: Mairie & horaires
+    icon: schedule
+    files:
+      - name: mairie
+        label: Coordonnées et horaires
+        file: contenu/json/mairie.json
+        format: json
+        fields:
+          - name: mairie
+            label: La mairie
+            widget: object
+            fields:
+              - { name: maire, label: Nom du maire, widget: string }
+              - { name: maireAConfirmer, label: Nom du maire à vérifier, widget: boolean, required: false }
+              - { name: adresse, label: Adresse, widget: string }
+              - { name: codePostal, label: Code postal, widget: string }
+              - { name: ville, label: Ville, widget: string }
+              - { name: telephone, label: Téléphone, widget: string }
+              - { name: email, label: E-mail, widget: string }
+              - &horaires
+                name: horaires
+                label: Horaires d'ouverture
+                label_singular: jour d'ouverture
+                widget: list
+                summary: "Jour {{fields.jour}}"
+                fields:
+                  - name: jour
+                    label: Jour
+                    widget: select
+                    options:
+                      - { label: Lundi, value: 1 }
+                      - { label: Mardi, value: 2 }
+                      - { label: Mercredi, value: 3 }
+                      - { label: Jeudi, value: 4 }
+                      - { label: Vendredi, value: 5 }
+                      - { label: Samedi, value: 6 }
+                      - { label: Dimanche, value: 7 }
+                  - name: plages
+                    label: Plages horaires
+                    label_singular: plage
+                    widget: list
+                    summary: "{{fields.debut}} – {{fields.fin}}"
+                    fields:
+                      - { name: debut, label: "Ouverture (ex. 09:00)", widget: string, pattern: ['^\d\d:\d\d$', "Format HH:MM, par exemple 09:00"] }
+                      - { name: fin, label: "Fermeture (ex. 12:30)", widget: string, pattern: ['^\d\d:\d\d$', "Format HH:MM, par exemple 12:30"] }
+              - name: fermetures
+                label: Fermetures exceptionnelles
+                label_singular: fermeture
+                widget: list
+                required: false
+                summary: "{{fields.date}}"
+                fields:
+                  - { name: date, label: Date, widget: datetime, time_format: false, date_format: "DD/MM/YYYY", format: "YYYY-MM-DD" }
+          - name: bibliotheque
+            label: La bibliothèque
+            widget: object
+            fields:
+              - { name: adresse, label: Adresse, widget: string }
+              - *horaires
+
+  # ------------------------------------------------------------------
+  - name: vie-locale
+    label: Agenda & associations
+    icon: event
+    files:
+      - name: vie-locale
+        label: Agenda, associations, bulletins, conseil
+        file: contenu/json/vie-locale.json
+        format: json
+        fields:
+          - name: agenda
+            label: Agenda
+            label_singular: rendez-vous
+            widget: list
+            summary: "{{fields.date}} — {{fields.titre}}"
+            fields:
+              - { name: titre, label: Titre, widget: string }
+              - { name: date, label: Date, widget: datetime, time_format: false, date_format: "DD/MM/YYYY", format: "YYYY-MM-DD" }
+              - { name: heure, label: "Heure (ex. 15h00)", widget: string, required: false }
+              - { name: lieu, label: Lieu, widget: string }
+              - { name: organisateur, label: Organisateur, widget: string, required: false }
+              - { name: aConfirmer, label: À vérifier, widget: boolean, required: false, default: false }
+              - { name: titre_br, label: Titre en breton, widget: string, required: false }
+          - name: associations
+            label: Associations
+            label_singular: association
+            widget: list
+            summary: "{{fields.nom}}"
+            fields:
+              - { name: nom, label: Nom, widget: string }
+              - { name: activites, label: Activités, widget: string }
+              - { name: email, label: E-mail public de l'association, widget: string, required: false, hint: "Seulement avec l'accord de l'association." }
+          - name: bulletins
+            label: Bulletins municipaux
+            label_singular: bulletin
+            widget: list
+            summary: "{{fields.titre}} — {{fields.sousTitre}}"
+            fields:
+              - { name: titre, label: "Titre (ex. Berc'hediz n°9)", widget: string }
+              - { name: sousTitre, label: "Date (ex. Mai 2027)", widget: string }
+              - { name: fichier, label: Fichier PDF, widget: file, required: false }
+          - name: conseil
+            label: Conseil municipal
+            label_singular: élu
+            widget: list
+            summary: "{{fields.nom}} — {{fields.role}}"
+            fields:
+              - { name: nom, label: "Nom (ou « À compléter »)", widget: string }
+              - { name: role, label: Fonction, widget: string }
+
+  # ------------------------------------------------------------------
+  - name: tarifs
+    label: Tarifs & terrains
+    icon: euro
+    files:
+      - name: tarifs
+        label: Tarifs communaux et lots à bâtir
+        file: contenu/json/tarifs.json
+        format: json
+        fields:
+          - name: tarifs
+            label: Tarifs
+            widget: object
+            fields:
+              - { name: annee, label: Année des tarifs, widget: number, value_type: int }
+              - name: salle
+                label: Location de la salle des fêtes
+                label_singular: tarif
+                widget: list
+                summary: "{{fields.objet}}"
+                fields:
+                  - { name: objet, label: Objet de la location, widget: string }
+                  - { name: locaux, label: Prix habitants, widget: string }
+                  - { name: exterieurs, label: Prix extérieurs, widget: string }
+              - name: services
+                label: Autres services
+                label_singular: service
+                widget: list
+                summary: "{{fields.service}} — {{fields.tarif}}"
+                fields:
+                  - { name: service, label: Service, widget: string }
+                  - { name: tarif, label: Tarif, widget: string }
+          - name: terrains
+            label: Terrains à bâtir
+            widget: object
+            fields:
+              - { name: prixM2, label: Prix au m², widget: string }
+              - name: lots
+                label: Lots disponibles
+                label_singular: lot
+                widget: list
+                summary: "Lot {{fields.numero}} — {{fields.surface}} m²"
+                fields:
+                  - { name: numero, label: Numéro du lot, widget: number, value_type: int }
+                  - { name: surface, label: Surface en m², widget: number, value_type: int }
+
+  # ------------------------------------------------------------------
+  - name: covoiturage
+    label: Covoiturage
+    icon: directions_car
+    files:
+      - name: covoiturage
+        label: Trajets
+        file: contenu/json/covoiturage.json
+        format: json
+        fields:
+          - name: covoiturage
+            label: Covoiturage
+            widget: object
+            fields:
+              - { name: dureeAnnonce, label: Durée d'affichage d'une annonce (semaines), widget: number, value_type: int }
+              - name: trajets
+                label: Trajets
+                label_singular: trajet
+                widget: list
+                summary: "{{fields.ref}} — {{fields.de.nom}} → {{fields.a.nom}}"
+                fields:
+                  - { name: ref, label: "Référence (ex. C-07)", widget: string, hint: "C'est ce numéro que les gens donnent au téléphone." }
+                  - name: type
+                    label: Type
+                    widget: select
+                    options:
+                      - { label: Propose des places, value: propose }
+                      - { label: Cherche une voiture, value: cherche }
+                  -
+                    name: de
+                    label: Départ (lieu public, jamais un domicile)
+                    widget: object
+                    fields:
+                      - { name: nom, label: Nom du lieu, widget: string }
+                      - { name: lat, label: Latitude, widget: number, value_type: float, hint: "Dans Google Maps : clic droit sur le lieu, puis cliquer sur les chiffres pour les copier (le premier nombre)." }
+                      - { name: lng, label: Longitude, widget: number, value_type: float, hint: "Le second nombre (négatif en Bretagne)." }
+                  - name: a
+                    label: Destination
+                    widget: object
+                    fields:
+                      - { name: nom, label: Nom du lieu, widget: string }
+                      - { name: lat, label: Latitude, widget: number, value_type: float }
+                      - { name: lng, label: Longitude, widget: number, value_type: float }
+                  - name: jours
+                    label: Jours (trajet régulier)
+                    widget: select
+                    multiple: true
+                    required: false
+                    options:
+                      - { label: Lundi, value: "1" }
+                      - { label: Mardi, value: "2" }
+                      - { label: Mercredi, value: "3" }
+                      - { label: Jeudi, value: "4" }
+                      - { label: Vendredi, value: "5" }
+                      - { label: Samedi, value: "6" }
+                      - { label: Dimanche, value: "7" }
+                  - { name: date, label: Ou une date (trajet unique), widget: datetime, time_format: false, date_format: "DD/MM/YYYY", format: "YYYY-MM-DD", required: false }
+                  - { name: depart, label: "Heure de départ (ex. 07:40)", widget: string }
+                  - { name: arrivee, label: "Heure d'arrivée (ex. 08:15)", widget: string }
+                  - { name: retour, label: "Heure de retour (facultatif)", widget: string, required: false }
+                  - { name: places, label: Places libres, widget: number, value_type: int, required: false }
+                  - { name: note, label: Petite note (sans nom ni téléphone), widget: string, required: false }
+                  - { name: exemple, label: Trajet d'exemple (à supprimer avant la mise en ligne), widget: boolean, required: false, default: false }
+
+  # ------------------------------------------------------------------
+  - name: lieux
+    label: Commerces & lieux
+    icon: storefront
+    files:
+      - name: lieux
+        label: Carte des commerces et des lieux
+        file: contenu/json/lieux.json
+        format: json
+        fields:
+          - name: lieux
+            label: Lieux
+            label_singular: lieu
+            widget: list
+            summary: "{{fields.nom}}"
+            fields:
+              - { name: nom, label: Nom, widget: string }
+              - name: cat
+                label: Catégorie
+                widget: select
+                options:
+                  - { label: "À voir & services publics", value: voir }
+                  - { label: "Manger & boire", value: manger }
+                  - { label: Dormir, value: dormir }
+                  - { label: "Artisans & producteurs", value: produits }
+                  - { label: "Habitat & travaux", value: habitat }
+                  - { label: "Services & création", value: services }
+              - { name: desc, label: Description, widget: text, required: false }
+              - { name: adresse, label: Adresse, widget: string, required: false }
+              - { name: ville, label: Commune (si hors Sainte-Brigitte), widget: string, required: false }
+              - { name: tel, label: Téléphone professionnel, widget: string, required: false }
+              - { name: site, label: Site internet, widget: string, required: false }
+              - { name: horaires, label: Horaires, widget: string, required: false }
+              - { name: lat, label: Latitude, widget: number, value_type: float, required: false, hint: "Sans coordonnées, le lieu apparaît dans la liste mais pas sur la carte." }
+              - { name: lng, label: Longitude, widget: number, value_type: float, required: false }
+
+  # ------------------------------------------------------------------
+  - name: reglages
+    label: Réglages
+    icon: settings
+    files:
+      - name: reglages
+        label: Réglages du site
+        file: contenu/json/reglages.json
+        format: json
+        fields:
+          - { name: modeRelecture, label: "Mode relecture (pointillés « à vérifier »). À désactiver avant la mise en ligne.", widget: boolean }
+          - { name: domaine, label: Nom de domaine, widget: string }
+          - name: tickets
+            label: Bouton « Signaler / suggérer »
+            widget: object
+            fields:
+              - { name: actif, label: Afficher le bouton, widget: boolean }
+              - { name: cleWeb3Forms, label: Clé Web3Forms, widget: string, required: false }
+              - { name: emailSecours, label: E-mail de secours, widget: string, required: false }
+          - name: discord
+            label: Discord
+            widget: object
+            fields:
+              - { name: actif, label: Discord ouvert, widget: boolean }
+              - { name: lien, label: Lien d'invitation, widget: string, required: false }
+          - name: commune
+            label: La commune
+            widget: object
+            fields:
+              - { name: nom, label: Nom, widget: string }
+              - { name: nomBreton, label: Nom en breton, widget: string }
+              - { name: gentile, label: Nom des habitants, widget: string }
+              - { name: habitants, label: Nombre d'habitants, widget: number, value_type: int }
+              - { name: codePostal, label: Code postal, widget: string }
+              - { name: departement, label: Département, widget: string }
+              - { name: intercommunalite, label: Intercommunalité, widget: string }
+              - { name: latitude, label: Latitude du bourg, widget: number, value_type: float }
+              - { name: longitude, label: Longitude du bourg, widget: number, value_type: float }

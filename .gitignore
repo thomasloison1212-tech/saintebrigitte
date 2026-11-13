@@ -1,0 +1,7 @@
+# Ne pas publier : essais, captures et outils internes
+essais/
+captures-telephone/
+outils/
+*.ps1
+Thumbs.db
+desktop.ini

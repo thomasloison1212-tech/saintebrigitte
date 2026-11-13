@@ -1,0 +1,24 @@
+{
+  "modeRelecture": true,
+  "domaine": "saintebrigitte.bzh",
+  "tickets": {
+    "actif": true,
+    "cleWeb3Forms": "",
+    "emailSecours": ""
+  },
+  "discord": {
+    "actif": false,
+    "lien": ""
+  },
+  "commune": {
+    "nom": "Sainte-Brigitte",
+    "nomBreton": "Santez-Berc'hed",
+    "gentile": "Brigittois",
+    "habitants": 178,
+    "codePostal": "56480",
+    "departement": "Morbihan",
+    "intercommunalite": "Pontivy Communauté",
+    "latitude": 48.164,
+    "longitude": -3.137
+  }
+}

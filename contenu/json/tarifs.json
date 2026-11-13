@@ -1,0 +1,114 @@
+{
+  "tarifs": {
+    "annee": 2025,
+    "salle": [
+      {
+        "objet": "Résidence d'une journée",
+        "locaux": "20 €",
+        "exterieurs": "30 €"
+      },
+      {
+        "objet": "Réunion",
+        "locaux": "30 €",
+        "exterieurs": "50 €"
+      },
+      {
+        "objet": "Vin d'honneur",
+        "locaux": "50 €",
+        "exterieurs": "60 €"
+      },
+      {
+        "objet": "Collation",
+        "locaux": "60 €",
+        "exterieurs": "80 €"
+      },
+      {
+        "objet": "Repas midi",
+        "locaux": "70 €",
+        "exterieurs": "150 €"
+      },
+      {
+        "objet": "Repas avec soirée",
+        "locaux": "100 €",
+        "exterieurs": "200 €"
+      },
+      {
+        "objet": "Forfait week-end",
+        "locaux": "125 €",
+        "exterieurs": "250 €"
+      },
+      {
+        "objet": "Installation la veille (dès 14 h)",
+        "locaux": "25 €",
+        "exterieurs": "50 €"
+      }
+    ],
+    "services": [
+      {
+        "service": "Photocopie A4",
+        "tarif": "0,30 €"
+      },
+      {
+        "service": "Photocopie A3",
+        "tarif": "0,50 €"
+      },
+      {
+        "service": "Photocopies associations brigittoises",
+        "tarif": "Gratuit (papier non fourni)"
+      },
+      {
+        "service": "Broyage à domicile",
+        "tarif": "15 € / heure"
+      },
+      {
+        "service": "Broyage sur site communal (apport volontaire)",
+        "tarif": "Gratuit"
+      },
+      {
+        "service": "Cession de broyat",
+        "tarif": "10 € / m³"
+      },
+      {
+        "service": "Livraison de broyat à domicile",
+        "tarif": "10 €"
+      },
+      {
+        "service": "Encombrants — 1er enlèvement",
+        "tarif": "Gratuit"
+      },
+      {
+        "service": "Encombrants — 2e enlèvement",
+        "tarif": "20 € (+10 € tracteur et camion)"
+      },
+      {
+        "service": "Entretien des tombes pour la Toussaint",
+        "tarif": "15 €"
+      }
+    ]
+  },
+  "terrains": {
+    "prixM2": "10 € TTC",
+    "lots": [
+      {
+        "numero": 3,
+        "surface": 721
+      },
+      {
+        "numero": 5,
+        "surface": 1007
+      },
+      {
+        "numero": 6,
+        "surface": 732
+      },
+      {
+        "numero": 7,
+        "surface": 720
+      },
+      {
+        "numero": 8,
+        "surface": 1014
+      }
+    ]
+  }
+}

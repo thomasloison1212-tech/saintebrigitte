@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Covoiturage — Sainte-Brigitte</title>
+  <meta name="titre-br" content="Kenweturiñ — Santez-Berc'hed">
+  <meta name="description" content="Covoiturage entre habitants de Sainte-Brigitte : trajets proposés et recherchés, mise en relation par la mairie.">
+  <meta name="robots" content="noindex, nofollow"><!-- version de démonstration : à retirer à la mise en ligne officielle -->
+  <meta name="theme-color" content="#1f3a2e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300..500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<main id="contenu">
+  <header class="tete-page">
+    <div class="photo-fond" data-rendu="photo" data-photo="lac1" data-largeur="1920" data-prioritaire></div>
+    <div class="tete-page__contenu conteneur apparait">
+      <p class="fil"><a href="index.html" data-br="Degemer">Accueil</a> / <a href="vie-locale.html" data-br="Buhez lec'hel">Vie locale</a> / <span data-br="Kenweturiñ">Covoiturage</span></p>
+      <h1 data-br="Mont asambles">On y va ensemble ?</h1>
+      <p class="chapeau" data-tr>Une place libre dans votre voiture, ou besoin d'aller à Pontivy, au marché, à un rendez-vous ? La mairie vous met en relation, simplement et sans rien publier sur vous.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="conteneur">
+      <div class="etapes revele">
+        <div><b>1</b><h3 data-tr>Repérez un trajet</h3><p data-tr>Sur la carte ou dans la liste. Aucun nom n'est affiché, seulement une référence.</p></div>
+        <div><b>2</b><h3 data-tr>Appelez la mairie</h3><p data-tr>Donnez la référence du trajet, par exemple « C-01 ». En dehors des heures d'ouverture, laissez un message.</p></div>
+        <div><b>3</b><h3 data-tr>La mairie vous met en contact</h3><p data-tr>Après accord des deux personnes, elle transmet les coordonnées. Vous vous organisez ensuite librement.</p></div>
+      </div>
+
+      <h2 class="revele" style="margin-top:60px" data-br="An hentadoù">Les trajets</h2>
+      <div data-rendu="covoiturage"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="conteneur colonnes">
+      <div class="encart revele">
+        <h3 data-tr>Les règles du jeu</h3>
+        <ul class="liste-points">
+          <li data-tr>Les rendez-vous se donnent dans un lieu public : place de l'église, parking, arrêt de car.</li>
+          <li data-tr>Le covoiturage se fait sans bénéfice : on partage seulement les frais (carburant, péage).</li>
+          <li data-tr>La mairie met en relation, mais n'organise pas le trajet et n'en est pas responsable.</li>
+          <li data-tr>Une annonce reste en ligne 8 semaines, puis la mairie vous demande si elle doit la garder.</li>
+        </ul>
+      </div>
+      <div class="encart encart--vert revele" style="--delai:.1s">
+        <h3 data-tr>Proposer ou demander un trajet</h3>
+        <p data-tr>Appelez la mairie ou envoyez une demande en ligne : d'où, vers où, quels jours et à quelle heure. Votre nom et votre téléphone restent à la mairie, jamais sur le site.</p>
+        <p style="font-size:1.4rem;font-weight:600;margin:12px 0"><a data-info="mairie.telephone" data-lien="tel" href="#" style="text-decoration:none"></a></p>
+        <p style="margin:0"><button type="button" class="bouton bouton--clair" data-covoit-ajout data-tr>Envoyer ma demande</button></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="conteneur">
+      <h2 class="revele" data-br="Diskoulmoù all">Et pour aller plus loin</h2>
+      <div class="colonnes">
+        <div class="encart revele">
+          <h3>OuestGo</h3>
+          <p data-tr>La plateforme publique et gratuite de covoiturage du quotidien du Grand Ouest, recommandée par Pontivy Communauté. Idéal pour les trajets réguliers vers le travail.</p>
+          <a class="lien-fleche" href="https://www.ouestgo.fr" rel="noopener">ouestgo.fr <span data-icone="fleche"></span></a>
+        </div>
+        <div class="encart revele" style="--delai:.1s">
+          <h3 data-tr>Transport à la demande</h3>
+          <p class="a-confirmer" data-note="Vérifier les conditions actuelles auprès de Pontivy Communauté" data-tr>PondiTAD, le transport à la demande de Pontivy Communauté, fonctionne sur réservation, avec un ticket à 1 €.</p>
+          <a class="lien-fleche" href="https://www.pontivy-communaute.bzh" rel="noopener">pontivy-communaute.bzh <span data-icone="fleche"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="contenu/donnees.js"></script>
+<script src="contenu/lieux.js"></script>
+<script src="contenu/photos.js"></script>
+<script src="contenu/anglais.js"></script>
+<script src="assets/js/demarrage.js"></script>
+</body>
+</html>

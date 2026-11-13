@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" role="img" aria-labelledby="t">
+  <title id="t">Armoiries de Sainte-Brigitte : d'hermine à une tour d'or ouverte, ajourée et maçonnée de sable, au franc-canton de gueules chargé d'une mâcle d'or</title>
+  <defs>
+    <!-- Moucheture d'hermine, dessin breton : trois points et une queue en éventail -->
+    <symbol id="hermine" viewBox="-8 -12 16 24" overflow="visible">
+      <circle cx="0" cy="-9" r="1.9"/>
+      <circle cx="-3.6" cy="-6" r="1.9"/>
+      <circle cx="3.6" cy="-6" r="1.9"/>
+      <path d="M0 -4.2 C-0.9 0 -2.6 4.5 -5.4 9.2 L-1.7 7.3 L0 11 L1.7 7.3 L5.4 9.2 C2.6 4.5 0.9 0 0 -4.2 Z"/>
+    </symbol>
+    <pattern id="champ-hermine" width="40" height="48" patternUnits="userSpaceOnUse" x="-2" y="0">
+      <use href="#hermine" x="4" y="2" width="13" height="20" fill="#16191a"/>
+      <use href="#hermine" x="24" y="26" width="13" height="20" fill="#16191a"/>
+    </pattern>
+    <clipPath id="ecu"><path d="M12 10 H188 V118 C188 176 152 212 100 230 C48 212 12 176 12 118 Z"/></clipPath>
+    <linearGradient id="or" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1cd63"/><stop offset="1" stop-color="#d6a32e"/>
+    </linearGradient>
+    <linearGradient id="gueules" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cf3a33"/><stop offset="1" stop-color="#a82522"/>
+    </linearGradient>
+    <linearGradient id="relief" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".08"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#ecu)">
+    <!-- Champ d'hermine -->
+    <rect width="200" height="240" fill="#fbf9f3"/>
+    <rect width="200" height="240" fill="url(#champ-hermine)"/>
+
+    <!-- Franc-canton de gueules chargé d'une mâcle d'or -->
+    <rect x="12" y="10" width="72" height="72" fill="url(#gueules)"/>
+    <path d="M84 10 V82 H12" fill="none" stroke="#16191a" stroke-width="2"/>
+    <path d="M48 20 L72 46 L48 72 L24 46 Z M48 33 L60 46 L48 59 L36 46 Z" fill="url(#or)" fill-rule="evenodd" stroke="#7a1715" stroke-width="1"/>
+
+    <!-- Tour d'or, ouverte, ajourée et maçonnée de sable -->
+    <g stroke="#16191a" stroke-width="2" stroke-linejoin="round">
+      <!-- créneaux et corps -->
+      <path d="M70 98 V86 H81 V94 H92 V86 H108 V94 H119 V86 H130 V98 L126 104 V194 H74 V104 Z" fill="url(#or)"/>
+      <!-- cordon sous les créneaux -->
+      <path d="M71 104 H129" fill="none"/>
+    </g>
+    <!-- maçonnerie -->
+    <g stroke="#16191a" stroke-width="1.3" fill="none" opacity=".85">
+      <path d="M74 120 H126 M74 136 H126 M74 152 H126 M74 168 H126 M74 182 H126"/>
+      <path d="M90 104 V120 M110 104 V120 M82 120 V136 M100 120 V136 M118 120 V136 M90 136 V152 M110 136 V152 M82 152 V168 M118 152 V168 M90 168 V182 M110 168 V182 M82 182 V194 M118 182 V194"/>
+    </g>
+    <!-- fenêtres (ajourée) et porte (ouverte) -->
+    <g fill="#16191a">
+      <path d="M85 148 V136 a4 4 0 0 1 8 0 V148 Z"/>
+      <path d="M107 148 V136 a4 4 0 0 1 8 0 V148 Z"/>
+      <path d="M90 194 V172 a10 10 0 0 1 20 0 V194 Z"/>
+    </g>
+
+    <!-- léger relief -->
+    <rect width="200" height="240" fill="url(#relief)"/>
+  </g>
+
+  <!-- Bordure de l'écu -->
+  <path d="M12 10 H188 V118 C188 176 152 212 100 230 C48 212 12 176 12 118 Z" fill="none" stroke="#16191a" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M18 16 H182 V118 C182 172 148 205 100 222 C52 205 18 172 18 118 Z" fill="none" stroke="#d6a32e" stroke-width="1.2" opacity=".7"/>
+</svg>

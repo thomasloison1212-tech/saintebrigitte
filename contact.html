@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Sainte-Brigitte</title>
+  <meta name="titre-br" content="Darempred — Santez-Berc'hed">
+  <meta name="description" content="Contacter la mairie de Sainte-Brigitte : adresse, téléphone, e-mail, horaires et plan d'accès.">
+  <meta name="robots" content="noindex, nofollow"><!-- version de démonstration : à retirer à la mise en ligne officielle -->
+  <meta name="theme-color" content="#1f3a2e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300..500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<main id="contenu">
+  <header class="tete-page">
+    <div class="photo-fond" data-rendu="photo" data-photo="eglise" data-largeur="1920" data-prioritaire></div>
+    <div class="tete-page__contenu conteneur apparait">
+      <p class="fil"><a href="index.html" data-br="Degemer">Accueil</a> / <span data-br="Darempred">Contact</span></p>
+      <h1 data-br="Ur goulenn ? Skrivit deomp">Une question ? Écrivez-nous</h1>
+      <p class="chapeau" data-br="Respont a ra ar sekretouriezh d'ar c'hemennadennoù en devezhioù digeriñ.">Le secrétariat répond aux messages les jours d'ouverture.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="conteneur" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(30px,5vw,60px);align-items:start">
+
+      <div class="revele">
+        <h2 style="font-size:1.8rem" data-br="Kas ur gemennadenn">Envoyer un message</h2>
+        <form class="formulaire" id="form-contact">
+          <label><span data-br="Danvez">Objet</span>
+            <select name="sujet" id="sujet">
+              <option value="Question générale" data-br="Goulenn hollek">Question générale</option>
+              <option value="salle" data-br="Feurmiñ sal ar gouelioù">Location de la salle des fêtes</option>
+              <option value="camping" data-br="Kampin ar gumun">Camping municipal</option>
+              <option value="terrain" data-br="Tachennoù da sevel">Terrains à bâtir</option>
+              <option value="numerique" data-br="Skoazell niverel">Accompagnement numérique</option>
+              <option value="biodiversite" data-br="Arsellva ar vevliesseurted">Observatoire de la biodiversité</option>
+              <option value="Urbanisme" data-br="Kêraozañ">Urbanisme</option>
+              <option value="Autre" data-br="All">Autre</option>
+            </select>
+          </label>
+          <label><span data-br="Hoc'h anv">Votre nom</span> <input name="nom" autocomplete="name" required></label>
+          <label><span data-br="Ho kemennadenn">Votre message</span> <textarea name="message" rows="6" required></textarea></label>
+          <button class="bouton bouton--vert" type="submit" style="justify-self:start" data-br="Prientiñ ar postel">Préparer l'e-mail</button>
+          <p class="petit" style="margin:0" data-br="Digeriñ a ra ar bouton ho posteloù gant ar gemennadenn leuniet en a-raok : roadenn ebet n'eo enrollet war al lec'hienn-mañ.">Le bouton ouvre votre messagerie avec le message pré-rempli : aucune donnée n'est enregistrée sur ce site.</p>
+        </form>
+      </div>
+
+      <div>
+        <div class="encart encart--vert revele">
+          <h3 data-br="Ti-kêr Santez-Berc'hed">Mairie de Sainte-Brigitte</h3>
+          <p><span data-info="mairie.adresse"></span><br><span data-info="mairie.codePostal"></span> <span data-info="mairie.ville"></span></p>
+          <p style="font-size:1.6rem;font-weight:600;margin-bottom:4px"><a data-info="mairie.telephone" data-lien="tel" href="#" style="text-decoration:none"></a></p>
+          <p><a data-info="mairie.email" data-lien="mail" href="#"></a></p>
+          <p style="margin:0"><span data-rendu="statut" class="statut">…</span></p>
+        </div>
+        <div class="encart revele">
+          <h3 data-br="Eurioù ar sekretouriezh">Horaires du secrétariat</h3>
+          <ul class="horaires" data-rendu="horaires-mairie"></ul>
+        </div>
+      </div>
+
+      <div class="revele" style="grid-column:1/-1">
+        <h2 style="font-size:1.8rem" data-br="Dont da Santez-Berc'hed">Venir à Sainte-Brigitte</h2>
+        <p class="petit"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=48.16427,-3.12911" target="_blank" rel="noopener" data-br="Hentad betek an ti-kêr gant Google Maps">Itinéraire jusqu'à la mairie avec Google Maps</a></p>
+        <div data-rendu="carte" data-cats="voir"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="contenu/donnees.js"></script>
+<script src="contenu/lieux.js"></script>
+<script src="contenu/photos.js"></script>
+<script src="contenu/anglais.js"></script>
+<script src="assets/js/demarrage.js"></script>
+<script>
+  (function () {
+    var f = document.getElementById("form-contact"), s = document.getElementById("sujet");
+    var q = new URLSearchParams(location.search).get("sujet");
+    if (q) s.value = q;
+    var libelles = { salle: "Location de la salle des fêtes", camping: "Camping municipal", terrain: "Terrains à bâtir", numerique: "Accompagnement numérique", biodiversite: "Observatoire de la biodiversité" };
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var sujet = libelles[s.value] || s.value;
+      location.href = "mailto:" + window.SITE.mairie.email + "?subject=" + encodeURIComponent("[Site] " + sujet) + "&body=" + encodeURIComponent(f.message.value + "\n\n" + f.nom.value);
+    });
+  })();
+</script>
+</body>
+</html>

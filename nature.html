@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faune & flore — Sainte-Brigitte</title>
+  <meta name="titre-br" content="Loened ha plant — Santez-Berc'hed">
+  <meta name="description" content="Catalogue des oiseaux, papillons, mammifères, reptiles, arbres et plantes observés à Sainte-Brigitte, entre lac de Guerlédan et forêt de Quénécan.">
+  <meta name="robots" content="noindex, nofollow"><!-- version de démonstration : à retirer à la mise en ligne officielle -->
+  <meta name="theme-color" content="#1f3a2e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300..500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<main id="contenu">
+  <header class="tete-page">
+    <div class="photo-fond" data-rendu="photo" data-photo="foret2" data-largeur="1920" data-prioritaire></div>
+    <div class="tete-page__contenu conteneur apparait">
+      <p class="fil"><a href="index.html" data-br="Degemer">Accueil</a> / <a href="vie-locale.html#biodiversite" data-br="Buhez lec'hel">Vie locale</a> / <span data-br="Loened ha plant">Faune &amp; flore</span></p>
+      <h1 data-br="Loened ha plant Berc'hed">La faune et la flore de Sainte-Brigitte</h1>
+      <p class="chapeau" data-br="Evned ar liorzhoù, balafenned al lanneier, karved Kenekan, gwez ar c'hoad : ur c'hatalog bev, savet gant arsellva ar gumun hag an annezidi.">Oiseaux des jardins, papillons des landes, cerfs de Quénécan, champignons et arbres de la forêt : un catalogue vivant, nourri par l'observatoire communal et par les habitants.</p>
+    </div>
+  </header>
+
+  <section class="section section--serre">
+    <div class="conteneur">
+      <div class="chiffres chiffres--clair revele">
+        <div class="chiffre"><b data-compteur="77">77</b><span data-br="spesad er c'hatalog">espèces dans le catalogue</span></div>
+        <div class="chiffre"><b data-compteur="871">871</b><span data-br="arsell gant an arsellva (2023)">observations de l'observatoire (2023)</span></div>
+        <div class="chiffre"><b data-compteur="46">46</b><span data-br="spesad evned notennet">espèces d'oiseaux notées</span></div>
+        <div class="chiffre"><b data-compteur="400">400</b><span data-br="spesad enrollet en-dro d'ar gumun">espèces recensées alentour (GBIF)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" id="catalogue">
+    <div class="conteneur">
+      <div class="cn__onglets cn__onglets--haut" role="group" aria-label="Rubriques" data-rendu="onglets-nature">
+        <button type="button" data-panneau="vivant" data-br="Loened, plant ha togoù-touseg">Faune, flore &amp; champignons</button>
+        <button type="button" data-panneau="mineraux" data-br="Reier ha mein">Minéraux</button>
+        <button type="button" data-panneau="enfants" data-br="Evit ar vugale">Mode enfant</button>
+      </div>
+      <div data-panneau-nature="vivant">
+        <h2 data-br="Ar c'hatalog">Le catalogue</h2>
+        <p class="chapeau" data-tr>Choisissez un groupe, affichez ou cachez ses familles : la carte et les fiches suivent. Vous avez vu une espèce ? Dites-le-nous : chaque observation enrichit l'inventaire de la commune.</p>
+        <div data-rendu="especes"></div>
+      </div>
+      <div data-panneau-nature="mineraux" hidden>
+        <h2 data-br="Mein Santez-Berc'hed">Sous nos pieds</h2>
+        <p class="chapeau" data-tr>Granite, schistes, cristaux d'andalousite, anciennes mines de fer : l'histoire de la commune commence il y a des centaines de millions d'années. L'essentiel en deux lignes, et le détail à déplier.</p>
+        <div data-rendu="mineraux"></div>
+      </div>
+      <div data-panneau-nature="enfants" hidden>
+        <div data-rendu="enfants"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="conteneur duo">
+      <div class="duo__photo revele" data-rendu="photo" data-photo="lac2015"></div>
+      <div class="revele" style="--delai:.1s">
+        <h2 data-br="Arsellva ar vevliesseurted">L'observatoire de la biodiversité</h2>
+        <p class="chapeau" data-br="Lañset e 2022, e pede an arsellva pep annezad ha pep gweladenner da notenniñ al loened hag ar plant a welont war douaroù ar gumun.">Lancé en 2022, l'observatoire invite chaque habitant et chaque visiteur à noter la faune et la flore qu'il rencontre sur la commune.</p>
+        <p data-br="Er bloavezh kentañ : 871 arsell gant 8 arseller, 46 spesad evned, ar marc'hvran o tistreiñ ha zoken un evn mojennek eus al lanneier.">Première année : 871 observations par 8 observateurs, 46 espèces d'oiseaux, le retour du grand corbeau et même l'engoulevent, « oiseau mythique de nos landes ».</p>
+        <p class="petit a-confirmer" data-note="Noms bretons ajoutés par le site : à faire valider" data-br="Anvioù brezhonek an evned hag ar balafenned a zeu eus an arsellva. Ar re all a zo da wiriañ gant Ofis publik ar brezhoneg.">Les noms bretons des oiseaux et des papillons viennent de l'observatoire. Les autres, en pointillés, sont à faire valider par l'Office public de la langue bretonne.</p>
+        <a class="bouton bouton--vert" href="#" data-ticket data-br="Kas un arsell">Envoyer une observation</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="contenu/donnees.js"></script>
+<script src="contenu/lieux.js"></script>
+<script src="contenu/especes.js"></script>
+<script src="contenu/photos.js"></script>
+<script src="contenu/carte-milieux.js"></script>
+<script src="contenu/zones-especes.js"></script>
+<script src="contenu/mineraux.js"></script>
+<script src="contenu/enfants.js"></script>
+<script src="contenu/anglais.js"></script>
+<script src="assets/js/demarrage.js"></script>
+</body>
+</html>

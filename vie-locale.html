@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vie locale — Sainte-Brigitte</title>
+  <meta name="titre-br" content="Buhez lec'hel — Santez-Berc'hed">
+  <meta name="description" content="Associations, artisans et producteurs, bibliothèque, bulletins municipaux et observatoire de la biodiversité à Sainte-Brigitte.">
+  <meta name="robots" content="noindex, nofollow"><!-- version de démonstration : à retirer à la mise en ligne officielle -->
+  <meta name="theme-color" content="#1f3a2e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300..500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<main id="contenu">
+  <header class="tete-page">
+    <div class="photo-fond" data-rendu="photo" data-photo="lac2015" data-largeur="1920" data-prioritaire></div>
+    <div class="tete-page__contenu conteneur apparait">
+      <p class="fil"><a href="index.html" data-br="Degemer">Accueil</a> / <span data-br="Buhez lec'hel">Vie locale</span></p>
+      <h1 data-br="Ur vourc'h vihan gant ur galon vras">Un petit bourg qui a du cœur</h1>
+      <p class="chapeau" data-br="Kevredigezhioù, produerien bio, artizaned arz, tud a-youl vat al levraoueg : e Santez-Berc'hed e ro pep hini e lod.">Associations, producteurs bio, artisans d'art, bénévoles de la bibliothèque : à Sainte-Brigitte, chacun met la main à la pâte.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-bottom:0">
+    <div class="conteneur">
+      <h2 class="revele" data-br="Stalioù ha lec'hioù war ar gartenn">Commerces &amp; lieux sur la carte</h2>
+      <p class="chapeau revele" data-br="Dibabit ar rummadoù, klikit war ul lec'h : chomlec'h, pellgomz, eurioù, ha liamm war-eeun etrezek Google Maps.">Choisissez les catégories, touchez un lieu : adresse, téléphone, horaires, et lien direct vers Google Maps.</p>
+      <div class="revele" data-rendu="carte"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur mise-en-page">
+      <nav class="sommaire" aria-label="Sur cette page">
+        <a href="#associations" data-br="Kevredigezhioù">Associations</a>
+        <a href="#professionnels" data-br="Stalioù ha micherourien">Commerces &amp; pros</a>
+        <a href="#bibliotheque" data-br="Levraoueg">Bibliothèque</a>
+        <a href="#biodiversite" data-br="Bevliesseurted">Biodiversité</a>
+        <a href="covoiturage.html" data-br="Kenweturiñ">Covoiturage</a>
+        <a href="#bulletins" data-br="Kannadigoù">Bulletins</a>
+        <a href="#agenda" data-br="Deiziataer">Agenda</a>
+      </nav>
+
+      <div>
+        <div class="bloc" id="associations">
+          <h2 class="revele" data-br="Ar c'hevredigezhioù">Les associations</h2>
+          <p class="revele" data-br="Prejoù kengred, gouel-iliz, gwerzh-dilezel, Nedeleg ar vugale, eskemmoù gant Lituania… Deuit ganto !">Repas solidaires, kermesse, vide-grenier, Noël des enfants, échanges avec la Lituanie… Rejoignez-les !</p>
+          <div class="liste-pros" data-rendu="associations"></div>
+          <div class="encart encart--vert revele" style="margin-top:30px">
+            <h3 data-br="Kenweturiñ">Covoiturage</h3>
+            <p data-tr>Une place libre dans votre voiture, ou besoin d'un trajet ? La mairie met en relation les habitants, sans rien publier sur vous.</p>
+            <a class="bouton bouton--clair" href="covoiturage.html" data-tr>Voir les trajets</a>
+          </div>
+          <div data-rendu="discord" style="margin-top:30px"></div>
+        </div>
+
+        <div class="bloc" id="professionnels">
+          <h2 class="revele" data-br="Stalioù, artizaned ha degemererien">Commerces, artisans &amp; hébergeurs</h2>
+          <p class="revele" data-br="Limonadez bio, sev bezv, kanab, marionetennoù koad, botoù lêr… Gant tud Santez-Berc'hed ez eus ampartiz ! Prenit lec'hel !">Limonade bio, sève de bouleau, chanvre, marionnettes en bois, chaussures en cuir… Le savoir-faire brigittois a du caractère. Achetez local !</p>
+          <div data-rendu="pros"></div>
+          <p class="a-confirmer" data-note="Ajouter contacts / sites web si les pros sont d'accord" data-br="Micherour oc'h e Santez-Berc'hed ha c'hoant hoc'h eus da vezañ amañ ? <a href='contact.html'>Skrivit deomp</a>.">Vous êtes professionnel à Sainte-Brigitte et souhaitez apparaître ici ? <a href="contact.html">Écrivez-nous</a>.</p>
+        </div>
+
+        <div class="bloc" id="bibliotheque">
+          <h2 class="revele" data-br="Levraoueg ar gumun">La bibliothèque municipale</h2>
+          <div class="colonnes">
+            <div class="encart revele">
+              <h3 data-br="Eurioù digeriñ">Horaires</h3>
+              <ul class="horaires" data-rendu="horaires-biblio"></ul>
+              <p style="margin-top:16px;margin-bottom:0" data-br="14 straed an Iliz — lenn, amprestañ ha goulenn levrioù, korn-levrier gant ur priz dieub.">14 rue de l'Église — consultation, emprunt et commande de livres, coin bouquiniste à prix libre.</p>
+            </div>
+            <div class="encart encart--vert revele" style="--delai:.1s">
+              <h3 data-br="Ur skoazell niverel">Un coup de pouce numérique</h3>
+              <p data-br="Wifi, urzhiataer ha moullerez a-youl. Ur skoazell hiniennel ha digoust gant an niverel a vez kinniget dre emgav gant ur stummer kozh.">Wifi, ordinateur et imprimante à disposition. Un accompagnement individuel et gratuit au numérique est proposé sur rendez-vous par un ancien formateur.</p>
+              <a class="bouton bouton--clair" href="contact.html?sujet=numerique" data-br="Kemer un emgav">Prendre rendez-vous</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bloc" id="biodiversite">
+          <h2 class="revele" data-br="Arsellva ar vevliesseurted">L'observatoire de la biodiversité</h2>
+          <div class="duo revele" style="gap:40px">
+            <div class="duo__photo" style="aspect-ratio:1" data-rendu="photo" data-photo="foret2"></div>
+            <div>
+              <p class="chapeau" data-br="Gwennilied, balafenned, laboused al liorzhoù : abaoe 2022 e kont an annezidi hag ar weladennerien loened ha plant ar gumun.">Hirondelles, papillons, oiseaux des jardins : depuis 2022, habitants et visiteurs recensent la faune et la flore de la commune.</p>
+              <p data-br="Notennit ar pezh a welit war ar fichenn ha kasit anezhi d'an ti-kêr. Pep sell a sikour d'anavezout ha da wareziñ hor glad naturel.">Notez vos observations sur la fiche dédiée et envoyez-la à la mairie. Chaque regard compte pour mieux connaître et protéger notre patrimoine naturel.</p>
+              <div class="boutons">
+                <a class="bouton bouton--vert" href="nature.html" data-br="Katalog al loened hag ar plant">Le catalogue faune &amp; flore</a>
+                <a class="bouton bouton--contour" href="#" data-ticket data-br="Rannañ un arsell">Partager une observation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bloc" id="bulletins">
+          <h2 class="revele" data-br="Kannadigoù ar gumun">Bulletins municipaux</h2>
+          <p class="revele" data-br="<strong>Berc'hediz</strong>, kelaouenn ar gumun, ha <strong>Berc'hed Infos</strong>, al lizher-kelaouiñ.">  <strong>Berc'hediz</strong>, le magazine de la commune, et <strong>Berc'hed Infos</strong>, la lettre d'information.</p>
+          <div class="bulletins" data-rendu="bulletins"></div>
+        </div>
+
+        <div class="bloc" id="agenda">
+          <h2 class="revele" data-br="Deiziataer">Agenda</h2>
+          <ul class="agenda" data-rendu="agenda"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="contenu/donnees.js"></script>
+<script src="contenu/lieux.js"></script>
+<script src="contenu/photos.js"></script>
+<script src="contenu/anglais.js"></script>
+<script src="assets/js/demarrage.js"></script>
+</body>
+</html>
